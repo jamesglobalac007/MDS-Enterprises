@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MDS Enterprises — Database Revival for Mortgage Brokers</title>
+<meta name="description" content="MDS Enterprises helps Australian mortgage brokers unlock warm opportunities hiding in their existing CRM. Free 30-minute Database Discovery Session.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="MDS Enterprises — Database Revival for Mortgage Brokers">
+<meta property="og:description" content="Turn your old clients into new deals. We help mortgage brokers find warm opportunities hiding in their CRM.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MDS Enterprises">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2301696F'/%3E%3Ctext x='16' y='22' font-family='serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EMDS%3C/text%3E%3C/svg%3E">
+
+<style>
+/* ==============================
+   CSS Custom Properties
+   ============================== */
+:root {
+  /* Light mode (default) */
+  --bg: #F7F6F2;
+  --bg-surface: #F9F8F5;
+  --border: #D4D1CA;
+  --border-light: #E8E6E1;
+  --text: #28251D;
+  --text-muted: #7A7974;
+  --text-subtle: #9E9B95;
+  --accent: #01696F;
+  --accent-hover: #015458;
+  --accent-light: rgba(1, 105, 111, 0.08);
+  --white: #FFFFFF;
+
+  /* Typography */
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* Layout */
+  --max-width-narrow: 680px;
+  --max-width-medium: 860px;
+  --max-width-wide: 1040px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Transitions */
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --duration: 200ms;
+}
+
+[data-theme="dark"] {
+  --bg: #171614;
+  --bg-surface: #1E1D1A;
+  --border: #3A3833;
+  --border-light: #2A2925;
+  --text: #CDCCCA;
+  --text-muted: #8A8985;
+  --text-subtle: #5E5D59;
+  --accent: #01696F;
+  --accent-hover: #018A92;
+  --accent-light: rgba(1, 105, 111, 0.15);
+  --white: #FFFFFF;
+}
+
+/* ==============================
+   Reset & Base
+   ============================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background-color: var(--bg);
+  transition: background-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--duration) var(--ease);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==============================
+   Typography
+   ============================== */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  margin-bottom: var(--space-lg);
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+}
+
+p {
+  margin-bottom: var(--space-md);
+  color: var(--text-muted);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+
+/* ==============================
+   Layout
+   ============================== */
+.container {
+  width: 100%;
+  max-width: var(--max-width-wide);
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+.container--narrow {
+  max-width: var(--max-width-narrow);
+}
+
+.container--medium {
+  max-width: var(--max-width-medium);
+}
+
+section {
+  padding: var(--space-5xl) 0;
+}
+
+/* ==============================
+   Header / Navigation
+   ============================== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border-light);
+  transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  gap: var(--space-lg);
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.header__logo {
+  width: 36px;
+  height: 36px;
+}
+
+.header__brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.header__brand-name {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.header__brand-descriptor {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  color: var(--text-subtle);
+  letter-spacing: 0.02em;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.header__nav-link {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--duration) var(--ease);
+  white-space: nowrap;
+}
+
+.header__nav-link:hover {
+  color: var(--text);
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+/* Theme toggle */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all var(--duration) var(--ease);
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--text-subtle);
+  color: var(--text);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.theme-toggle .icon-moon { display: block; }
+.theme-toggle .icon-sun { display: none; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+
+/* Mobile menu button */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+  padding: var(--space-xs);
+}
+
+.mobile-menu-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ==============================
+   Buttons
+   ============================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--duration) var(--ease);
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.btn--primary:hover {
+  background-color: var(--accent-hover);
+  color: var(--white);
+}
+
+.btn--sm {
+  font-size: 0.8125rem;
+  padding: 0.5rem 1.125rem;
+  border-radius: 8px;
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn--outline:hover {
+  background-color: var(--accent-light);
+  color: var(--accent);
+}
+
+/* ==============================
+   Hero
+   ============================== */
+.hero {
+  padding: var(--space-5xl) 0;
+  text-align: center;
+}
+
+.hero__label {
+  margin-bottom: var(--space-lg);
+}
+
+.hero h1 {
+  margin-bottom: var(--space-xl);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__sub {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 auto var(--space-2xl);
+}
+
+/* ==============================
+   Problem Section
+   ============================== */
+.problem {
+  padding: var(--space-5xl) 0;
+}
+
+.problem p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
+}
+
+/* ==============================
+   How It Works
+   ============================== */
+.how-it-works {
+  padding: var(--space-5xl) 0;
+}
+
+.how-it-works__intro {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin-bottom: var(--space-3xl);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.step {
+  padding: var(--space-xl);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-surface);
+  transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.step__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--accent-light);
+  color: var(--accent);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.step h3 {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  margin-bottom: var(--space-sm);
+  color: var(--text);
+}
+
+.step p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* ==============================
+   Pricing / Sprint
+   ============================== */
+.sprint {
+  padding: var(--space-5xl) 0;
+}
+
+.sprint__intro {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin-bottom: var(--space-3xl);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.pricing-card {
+  padding: var(--space-2xl);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-surface);
+  position: relative;
+  transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.pricing-card--featured {
+  border-color: var(--accent);
+  border-width: 2px;
+}
+
+.pricing-card__badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.875rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.pricing-card__name {
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  color: var(--text);
+  margin-bottom: var(--space-xs);
+}
+
+.pricing-card__price {
+  font-family: var(--font-sans);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: var(--space-xs);
+}
+
+.pricing-card__price-note {
+  font-size: 0.8125rem;
+  color: var(--text-subtle);
+  margin-bottom: var(--space-md);
+}
+
+.pricing-card__desc {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.pricing-card__features {
+  list-style: none;
+  margin-bottom: var(--space-xl);
+}
+
+.pricing-card__features li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  padding: 0.375rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.pricing-card__features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  opacity: 0.6;
+}
+
+.pricing-note {
+  text-align: center;
+  margin-top: var(--space-2xl);
+  font-size: 0.875rem;
+  color: var(--text-subtle);
+}
+
+/* ==============================
+   FAQ
+   ============================== */
+.faq {
+  padding: var(--space-5xl) 0;
+}
+
+.faq-list {
+  margin-top: var(--space-2xl);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--border-light);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: var(--space-lg) 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  transition: color var(--duration) var(--ease);
+  line-height: 1.5;
+}
+
+.faq-question:hover {
+  color: var(--accent);
+}
+
+.faq-question__icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s var(--ease);
+  color: var(--text-subtle);
+}
+
+.faq-item.active .faq-question__icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s var(--ease);
+}
+
+.faq-answer__inner {
+  padding-bottom: var(--space-lg);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* ==============================
+   Security
+   ============================== */
+.security {
+  padding: var(--space-5xl) 0;
+}
+
+.security p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
+}
+
+.compliance-list {
+  list-style: none;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.compliance-list li {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  padding: 0.375rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.compliance-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  opacity: 0.5;
+}
+
+/* ==============================
+   About
+   ============================== */
+.about {
+  padding: var(--space-5xl) 0;
+}
+
+.about p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+/* ==============================
+   Final CTA
+   ============================== */
+.final-cta {
+  padding: var(--space-5xl) 0;
+  text-align: center;
+}
+
+.final-cta h2 {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  max-width: 580px;
+  margin: 0 auto var(--space-lg);
+  font-style: italic;
+}
+
+.final-cta p {
+  font-size: 1.0625rem;
+  max-width: 480px;
+  margin: 0 auto var(--space-2xl);
+}
+
+/* ==============================
+   Footer
+   ============================== */
+.footer {
+  padding: var(--space-2xl) 0;
+  border-top: 1px solid var(--border-light);
+  text-align: center;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.footer__copy {
+  font-size: 0.8125rem;
+  color: var(--text-subtle);
+}
+
+.footer__attribution {
+  font-size: 0.8125rem;
+  color: var(--text-subtle);
+}
+
+.footer__attribution a {
+  color: var(--text-subtle);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer__attribution a:hover {
+  color: var(--text-muted);
+}
+
+/* ==============================
+   Mobile Responsive
+   ============================== */
+@media (max-width: 768px) {
+  section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .hero {
+    padding: var(--space-3xl) 0;
+  }
+
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--border-light);
+    flex-direction: column;
+    padding: var(--space-lg) var(--space-xl);
+    gap: var(--space-md);
+    align-items: flex-start;
+  }
+
+  .header__nav.is-open {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .header__actions .btn {
+    display: none;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 var(--space-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ======================== HEADER ======================== -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="#" class="header__brand" aria-label="MDS Enterprises home">
+      <!-- Inline SVG Logo -->
+      <svg class="header__logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="MDS Enterprises logo">
+        <rect x="0.5" y="0.5" width="35" height="35" rx="7.5" stroke="currentColor" stroke-opacity="0.2"/>
+        <text x="18" y="23.5" font-family="'Instrument Serif', Georgia, serif" font-size="15" fill="currentColor" text-anchor="middle" font-weight="400">MDS</text>
+      </svg>
+      <span class="header__brand-text">
+        <span class="header__brand-name">MDS Enterprises</span>
+        <span class="header__brand-descriptor">Database Revival</span>
+      </span>
+    </a>
+
+    <nav class="header__nav" id="mainNav">
+      <a href="#how-it-works" class="header__nav-link">How It Works</a>
+      <a href="#pricing" class="header__nav-link">Pricing</a>
+      <a href="#faq" class="header__nav-link">FAQ</a>
+      <a href="#about" class="header__nav-link">About</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+      <!-- Replace #book with Calendly link -->
+      <a href="#book" class="btn btn--primary btn--sm">Book Free Session</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line x1="4" y1="7" x2="20" y2="7"/>
+          <line x1="4" y1="12" x2="20" y2="12"/>
+          <line x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ======================== HERO ======================== -->
+<section class="hero" id="hero">
+  <div class="container container--narrow">
+    <p class="label hero__label">Database Revival for Mortgage Brokers</p>
+    <h1>Your next deals are already in your database.</h1>
+    <p class="hero__sub">We help mortgage brokers find warm opportunities hiding in their CRM — without spending a dollar on new leads.</p>
+    <!-- Replace #book with Calendly link -->
+    <a href="#book" class="btn btn--primary">Book your free discovery session</a>
+  </div>
+</section>
+
+<!-- ======================== THE PROBLEM ======================== -->
+<section class="problem" id="problem">
+  <div class="container container--narrow">
+    <p class="label">The Problem</p>
+    <h2>Most brokerages are sitting on a goldmine they never touch.</h2>
+    <p>You've spent years building a database of clients and leads. Past clients who settled years ago. Pre-approvals that expired. Enquiries that went quiet.</p>
+    <p>But without a system to surface them, they slip through the cracks — and someone else picks them up.</p>
+    <p>Meanwhile, you're spending thousands chasing new leads when the easiest deals are already in your CRM.</p>
+  </div>
+</section>
+
+<!-- ======================== HOW IT WORKS ======================== -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container container--medium">
+    <p class="label">How It Works</p>
+    <h2>Give us 30 minutes in your database.</h2>
+    <p class="how-it-works__intro">We log into your CRM over Zoom and show you at least 5 warm opportunities you can contact in the next 30 days. If we can't find them, we walk away — no fee, no catch.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step__number">1</div>
+        <h3>Book a 30-minute Zoom call</h3>
+        <p>Pick a time that works for you. We'll send a Zoom link and a short prep checklist.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">2</div>
+        <h3>Share your screen or grant temporary CRM access</h3>
+        <p>You stay in control. We work inside your system under your permissions.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">3</div>
+        <h3>We scan for warm opportunities</h3>
+        <p>Fixed-rate expiries, refinance candidates, expired pre-approvals, lost deals, and dormant clients.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">4</div>
+        <h3>You walk away with a list of real people to call</h3>
+        <p>Actionable contacts you can reach out to this week, with context on why they're warm.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== THE SPRINT / PRICING ======================== -->
+<section class="sprint" id="pricing">
+  <div class="container container--wide">
+    <div class="container--narrow" style="margin: 0 auto;">
+      <p class="label">Pricing</p>
+      <h2>The Database Revival Sprint</h2>
+      <p class="sprint__intro">After the free session, most brokers want to unlock the full potential of their database. The 30-Day Database Revival Sprint is a done-with-you project where we build a complete re-engagement system: segments, campaigns, automations, and a repeatable playbook.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Lite -->
+      <div class="pricing-card">
+        <div class="pricing-card__name">Lite</div>
+        <div class="pricing-card__price">$1,500</div>
+        <div class="pricing-card__price-note">ex GST</div>
+        <p class="pricing-card__desc">Best for solo brokers with up to 500 contacts.</p>
+        <ul class="pricing-card__features">
+          <li>Database audit and cleanup</li>
+          <li>3 core segments built</li>
+          <li>3 email templates, 1 call script</li>
+          <li>Top 20 priority hit list</li>
+          <li>Loom video handover</li>
+        </ul>
+        <!-- Replace #book with Calendly link -->
+        <a href="#book" class="btn btn--outline" style="width: 100%;">Get started</a>
+      </div>
+
+      <!-- Standard (Featured) -->
+      <div class="pricing-card pricing-card--featured">
+        <div class="pricing-card__badge">Most popular</div>
+        <div class="pricing-card__name">Standard</div>
+        <div class="pricing-card__price">$3,500</div>
+        <div class="pricing-card__price-note">ex GST</div>
+        <p class="pricing-card__desc">Best for small teams with up to 2,000 contacts.</p>
+        <ul class="pricing-card__features">
+          <li>Everything in Lite, plus:</li>
+          <li>6 segments, 6 email templates, 3 SMS templates</li>
+          <li>3 segment-specific call scripts</li>
+          <li>Drip sequences and CRM automations</li>
+          <li>Top 50 priority hit list</li>
+          <li>Written playbook + 2 weeks email support</li>
+        </ul>
+        <!-- Replace #book with Calendly link -->
+        <a href="#book" class="btn btn--primary" style="width: 100%;">Get started</a>
+      </div>
+
+      <!-- Premium -->
+      <div class="pricing-card">
+        <div class="pricing-card__name">Premium</div>
+        <div class="pricing-card__price">$6,500</div>
+        <div class="pricing-card__price-note">ex GST</div>
+        <p class="pricing-card__desc">Best for growing brokerages with unlimited contacts.</p>
+        <ul class="pricing-card__features">
+          <li>Everything in Standard, plus:</li>
+          <li>Custom segments with lead scoring</li>
+          <li>10+ email templates, 6 SMS templates</li>
+          <li>Full automation + lead scoring</li>
+          <li>Top 50 hit list with monthly refresh</li>
+          <li>Live training session + 30 days support</li>
+        </ul>
+        <!-- Replace #book with Calendly link -->
+        <a href="#book" class="btn btn--outline" style="width: 100%;">Get started</a>
+      </div>
+    </div>
+
+    <p class="pricing-note">Payment: 50% upfront, 50% on handover. Optional add-on: Monthly retainer ($750–$1,500/month) for ongoing management.</p>
+  </div>
+</section>
+
+<!-- ======================== FAQ ======================== -->
+<section class="faq" id="faq">
+  <div class="container container--narrow">
+    <p class="label">FAQ</p>
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is my client data safe?</span>
+          <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer__inner">We work inside your CRM under your login or a limited-access account you control. Your data never leaves your system. We never download, export, or store client information. We're happy to sign an NDA before we start.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What CRMs do you work with?</span>
+          <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer__inner">Salestrekker, Mercury Nexus, HubSpot, Salesforce, and others. If your CRM has views, filters, and segments, we can work with it.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What if you can't find 5 opportunities?</span>
+          <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer__inner">We shake hands and walk away — no fee, no obligation. In a database of 200+ contacts, we've always been able to surface warm opportunities.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do you contact my clients directly?</span>
+          <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer__inner">No. We identify opportunities and build campaigns. You or your team do the outreach. We draft the emails, SMS, and call scripts — you send them.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Are the campaigns compliant?</span>
+          <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer__inner">Every campaign complies with the Spam Act 2003, Australian Privacy Principles, and Do Not Call Register requirements. Proper consent checks, clear identification, functional unsubscribe, and DNCR list washing.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How much time do I need to commit?</span>
+          <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer__inner">The free session is 30 minutes. For the Sprint, about 2–3 hours over 30 days — kickoff, mid-point check-in, and handover. We do the heavy lifting.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can I start with the free session and decide later?</span>
+          <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer__inner">Absolutely. The free session is standalone. You get your 5+ opportunities regardless. If you want to go deeper, we send a proposal within 24 hours.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== SECURITY & PRIVACY ======================== -->
+<section class="security" id="security">
+  <div class="container container--narrow">
+    <p class="label">Security &amp; Privacy</p>
+    <h2>Your data stays in your system.</h2>
+    <p>All work is performed inside your existing CRM platform using access credentials you provide and control. No client data is exported, downloaded, copied, or stored outside your system. Access can be revoked by you at any time.</p>
+    <p><strong style="color: var(--text);">Compliance:</strong></p>
+    <ul class="compliance-list">
+      <li>Spam Act 2003 (Cth)</li>
+      <li>Australian Privacy Principles (Privacy Act 1988)</li>
+      <li>Do Not Call Register Act 2006</li>
+    </ul>
+    <p>We do not download or store loan documents, financial statements, or sensitive client records. We work with contact records, loan status fields, and settlement dates only.</p>
+  </div>
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section class="about" id="about">
+  <div class="container container--narrow">
+    <p class="label">About</p>
+    <h2>Built by a broker, for brokers.</h2>
+    <p>MDS Enterprises is run by an Australian mortgage broker and deal originator with years of experience inside CRMs like Salestrekker, Mercury Nexus, and HubSpot. We know how broker databases work, what gets overlooked, and where the warm opportunities hide.</p>
+    <p>Everything is done remotely via Zoom, Loom, and shared CRM access. No in-person meetings required.</p>
+  </div>
+</section>
+
+<!-- ======================== FINAL CTA ======================== -->
+<section class="final-cta" id="book">
+  <div class="container container--narrow">
+    <p class="label">Get Started</p>
+    <h2>The worst case? You learn something new about your own database.</h2>
+    <p>Book your free 30-minute Database Discovery Session. No cost. No obligation. Just warm opportunities you can act on this week.</p>
+    <!-- Replace #book with Calendly link -->
+    <a href="#book" class="btn btn--primary">Book your free session</a>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="footer__copy">&copy; 2026 MDS Enterprises. All rights reserved.</span>
+    <span class="footer__attribution">
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+    </span>
+  </div>
+</footer>
+
+<!-- ======================== JAVASCRIPT ======================== -->
+<script>
+(function() {
+  'use strict';
+
+  // ---- Theme Toggle ----
+  const themeToggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
+
+  // Check saved preference or system preference
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    html.setAttribute('data-theme', saved);
+  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    html.setAttribute('data-theme', 'dark');
+  }
+
+  themeToggle.addEventListener('click', function() {
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+
+  // ---- Mobile Menu ----
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mainNav = document.getElementById('mainNav');
+
+  mobileMenuBtn.addEventListener('click', function() {
+    mainNav.classList.toggle('is-open');
+  });
+
+  // Close mobile menu when a nav link is clicked
+  mainNav.querySelectorAll('.header__nav-link').forEach(function(link) {
+    link.addEventListener('click', function() {
+      mainNav.classList.remove('is-open');
+    });
+  });
+
+  // ---- FAQ Accordion ----
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const item = this.closest('.faq-item');
+      const answer = item.querySelector('.faq-answer');
+      const isActive = item.classList.contains('active');
+
+      // Close all
+      document.querySelectorAll('.faq-item.active').forEach(function(openItem) {
+        openItem.classList.remove('active');
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        openItem.querySelector('.faq-answer').style.maxHeight = '0';
+      });
+
+      // Open clicked (if it wasn't already open)
+      if (!isActive) {
+        item.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // ---- Smooth scroll for anchor links ----
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+})();
+</script>
+
+</body>
+</html>
