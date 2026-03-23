@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-<!--
-   ______                            __
-  / ____/___  ____ ___  ____  __  __/ /____  _____
- / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
-/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
-\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
-                    /_/
-        Created with Perplexity Computer
-        https://www.perplexity.ai/computer
--->
-<meta name="generator" content="Perplexity Computer">
-<meta name="author" content="Perplexity Computer">
-<meta property="og:see_also" content="https://www.perplexity.ai/computer">
-<link rel="author" href="https://www.perplexity.ai/computer">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -137,7 +123,7 @@ img { display: block; max-width: 100%; }
 }
 
 section {
-  padding: var(--space-6xl) 0;
+  padding: var(--space-3xl) 0;
 }
 
 /* Editorial label */
@@ -315,8 +301,8 @@ section {
    ============================================ */
 .hero {
   position: relative;
-  padding: var(--space-6xl) 0 var(--space-5xl);
-  min-height: 85vh;
+  padding: var(--space-4xl) 0 var(--space-3xl);
+  min-height: 80vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -377,19 +363,19 @@ section {
 }
 
 .hero__sub {
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   line-height: 1.7;
-  color: var(--text-muted);
-  max-width: 540px;
+  color: var(--text);
+  max-width: 560px;
   margin-bottom: var(--space-2xl);
-  text-shadow: 0 1px 10px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
 }
 
 /* ============================================
    GUARANTEE
    ============================================ */
 .guarantee {
-  padding: var(--space-6xl) 0;
+  padding: var(--space-3xl) 0;
   border-top: 1px solid var(--border-light);
   border-bottom: 1px solid var(--border-light);
 }
@@ -418,7 +404,7 @@ section {
    PULL QUOTES
    ============================================ */
 .pull-quote {
-  padding: var(--space-4xl) 0;
+  padding: var(--space-2xl) 0;
   text-align: center;
 }
 
@@ -431,6 +417,11 @@ section {
   max-width: 800px;
   margin: 0 auto;
   letter-spacing: -0.01em;
+}
+
+.pull-quote__text--large {
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  max-width: 950px;
 }
 
 /* ============================================
@@ -465,7 +456,7 @@ section {
    THE PROBLEM
    ============================================ */
 .problem {
-  padding: var(--space-6xl) 0 var(--space-4xl);
+  padding: var(--space-3xl) 0 var(--space-2xl);
 }
 
 .problem h2 {
@@ -477,7 +468,7 @@ section {
 .problems-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-3xl) var(--space-4xl);
+  gap: var(--space-2xl) var(--space-3xl);
 }
 
 .problems-grid__item {
@@ -501,7 +492,7 @@ section {
 
 .problems-grid__item h3 {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--text);
   margin-bottom: var(--space-sm);
@@ -517,7 +508,7 @@ section {
 .problems-grid__close {
   margin-top: var(--space-3xl);
   font-family: var(--font-serif);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-style: italic;
   color: var(--text);
   line-height: 1.5;
@@ -527,7 +518,7 @@ section {
    HOW IT WORKS / PRICING
    ============================================ */
 .how-it-works {
-  padding: var(--space-6xl) 0;
+  padding: var(--space-3xl) 0;
 }
 
 .how-it-works h2 {
@@ -540,7 +531,7 @@ section {
   line-height: 1.8;
   color: var(--text-muted);
   max-width: 560px;
-  margin-bottom: var(--space-4xl);
+  margin-bottom: var(--space-2xl);
 }
 
 .steps {
@@ -661,12 +652,12 @@ section {
    INSIDE THE FIX
    ============================================ */
 .inside {
-  padding: var(--space-6xl) 0;
+  padding: var(--space-3xl) 0;
 }
 
 .inside h2 {
   font-size: clamp(1.75rem, 3.5vw, 2.75rem);
-  margin-bottom: var(--space-4xl);
+  margin-bottom: var(--space-2xl);
 }
 
 .inside__grid {
@@ -748,7 +739,7 @@ section {
    FAQ
    ============================================ */
 .faq {
-  padding: var(--space-6xl) 0;
+  padding: var(--space-3xl) 0;
 }
 
 .faq h2 {
@@ -816,7 +807,7 @@ section {
    ABOUT
    ============================================ */
 .about {
-  padding: var(--space-6xl) 0;
+  padding: var(--space-3xl) 0;
 }
 
 .about h2 {
@@ -882,20 +873,6 @@ section {
   color: var(--text-subtle);
 }
 
-.footer__attribution {
-  font-size: 0.8125rem;
-  color: var(--text-subtle);
-}
-
-.footer__attribution a {
-  color: var(--text-subtle);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.footer__attribution a:hover {
-  color: var(--text-muted);
-}
 
 /* ============================================
    DIVIDER
@@ -938,11 +915,11 @@ section {
 
 @media (max-width: 768px) {
   section {
-    padding: var(--space-4xl) 0;
+    padding: var(--space-2xl) 0;
   }
 
   .hero {
-    padding: var(--space-4xl) 0 var(--space-3xl);
+    padding: var(--space-3xl) 0 var(--space-2xl);
     min-height: 70vh;
   }
 
@@ -1032,6 +1009,138 @@ section {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ============================================
+   CONTACT MODAL
+   ============================================ */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.modal-overlay.is-open {
+  display: flex;
+}
+
+.modal {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl) var(--space-2xl);
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+  animation: modalIn 0.25s var(--ease);
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(12px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.modal__close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: none;
+  border: none;
+  color: var(--text-subtle);
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: var(--space-xs);
+  transition: color var(--duration) var(--ease);
+}
+
+.modal__close:hover { color: var(--text); }
+
+.modal__title {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-xs);
+}
+
+.modal__sub {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-xl);
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.modal__field label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: var(--space-xs);
+  letter-spacing: 0.01em;
+}
+
+.modal__field input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color var(--duration) var(--ease);
+}
+
+.modal__field input::placeholder {
+  color: var(--text-subtle);
+}
+
+.modal__field input:focus {
+  border-color: var(--accent);
+}
+
+.modal__submit {
+  margin-top: var(--space-sm);
+  width: 100%;
+}
+
+.modal__success {
+  text-align: center;
+  padding: var(--space-xl) 0;
+}
+
+.modal__success-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto var(--space-lg);
+}
+
+.modal__success h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.modal__success p {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
 </style>
 </head>
 <body>
@@ -1056,7 +1165,7 @@ section {
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
       </button>
-      <a href="#book" class="btn btn--primary btn--sm">Book a session</a>
+      <a href="#" data-modal class="btn btn--primary btn--sm">Book a session</a>
       <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
       </button>
@@ -1070,10 +1179,9 @@ section {
     <img src="mds-systems-flow.png" alt="" loading="eager" aria-hidden="true">
   </div>
   <div class="container">
-    <p class="label hero__label">Database Revitalisation &amp; Systems</p>
     <h1>Revitalise your database.<br>Build the systems.<br>Watch revenue grow.</h1>
     <p class="hero__sub">Your database is full of gold. We help you dig it out and build the systems that keep it flowing. Free discovery session.</p>
-    <a href="#book" class="btn btn--primary btn--large">Book your free session</a>
+    <a href="#" data-modal class="btn btn--primary btn--large">Book your free session</a>
   </div>
 </section>
 
@@ -1084,7 +1192,7 @@ section {
       <p class="label">Our Promise</p>
       <h2>We put our money<br>where our mouth is.</h2>
       <p class="guarantee__text">Your database is full of forgotten customers, old enquiries, people who said "not yet" — all of it untouched gold. We’ll go in, revitalise it live, and produce a hot lead within 30 minutes. If we can’t find gold in your database, you owe us nothing. No invoice. No follow-up. No catch.</p>
-      <a href="#book" class="btn btn--primary btn--large">Test us — book a free session</a>
+      <a href="#" data-modal class="btn btn--primary btn--large">Test us — book a free session</a>
     </div>
   </div>
 </section>
@@ -1126,15 +1234,9 @@ section {
         <p>So deep in operations you’ve lost touch with the people who actually pay you. That’s revenue slipping away quietly.</p>
       </div>
     </div>
-    <p class="problems-grid__close fade-in">Revitalise the database — revenue goes up. Build the systems — costs come down.</p>
   </div>
 </section>
 
-<div class="pull-quote">
-  <div class="container">
-    <p class="pull-quote__text fade-in">&ldquo;The revenue is there. You just need to remove the dust.&rdquo;</p>
-  </div>
-</div>
 
 <!-- ====== HOW IT WORKS ====== -->
 <section class="how-it-works" id="how-it-works">
@@ -1155,7 +1257,7 @@ section {
           <li>Revenue opportunities identified live</li>
           <li>Your data never leaves your screen</li>
         </ul>
-        <a href="#book" class="btn btn--primary">Book free session</a>
+        <a href="#" data-modal class="btn btn--primary">Book free session</a>
       </div>
 
       <!-- Bespoke Fix -->
@@ -1171,7 +1273,7 @@ section {
           <li>Staff trained and playbook delivered</li>
         </ul>
         <div class="step__bespoke">Scope and investment discussed after your free discovery session.</div>
-        <a href="#book" class="btn btn--primary">Book a session to learn more</a>
+        <a href="#" data-modal class="btn btn--primary">Book a session to learn more</a>
       </div>
 
       <!-- Stay Sharp -->
@@ -1186,17 +1288,12 @@ section {
           <li>Priority email and phone support</li>
           <li>Quarterly deep-dive session</li>
         </ul>
-        <a href="#book" class="btn btn--outline">Learn more</a>
+        <a href="#" data-modal class="btn btn--outline">Learn more</a>
       </div>
     </div>
   </div>
 </section>
 
-<div class="pull-quote">
-  <div class="container">
-    <p class="pull-quote__text fade-in">“The gold is already on the floor. You just need to change the way you pick it up.”</p>
-  </div>
-</div>
 
 <!-- ====== INSIDE THE FIX ====== -->
 <section class="inside" id="inside">
@@ -1312,33 +1409,56 @@ section {
 </section>
 
 <!-- ====== ABOUT ====== -->
-<section class="about" id="about">
+<section class="about" id="about" data-book>
   <div class="container">
     <p class="label">About</p>
-    <h2>20,000+ hours on the phones. Every industry.</h2>
-    <div class="about__text">
-      <p>MDS Enterprises is run by someone who's sat inside CRMs, built outreach systems, managed databases, and closed deals across every industry imaginable — sales, mortgage broking, deal origination, business development. Not a big consultancy. Not a tech company. Problem solvers.</p>
-      <p>Everything is done remotely — Zoom, Loom, screen-share. No in-person meetings required. We work with businesses across Australia. We know what it looks like when a business is leaving money on the table. And we know how to fix it.</p>
-    </div>
+    <h2>We are good at what we do.</h2>
+    <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-muted); max-width: 600px; margin-bottom: var(--space-2xl);">We back ourselves and believe in SME. We give 120% on every interaction and focus on results. What have you got to lose?</p>
+    <div id="book"></div>
+    <a href="#" data-modal class="btn btn--primary btn--large">Let's talk</a>
   </div>
 </section>
 
-<!-- ====== FINAL CTA ====== -->
-<section class="final-cta" id="book">
-  <div class="container">
-    <h2>Your business is leaving money on the table.</h2>
-    <p>30 minutes. Free. No obligation.</p>
-    <a href="#book" class="btn btn--primary btn--large">Let's talk</a>
-  </div>
-</section>
 
 <!-- ====== FOOTER ====== -->
 <footer class="footer">
   <div class="container footer__inner">
     <span class="footer__copy">&copy; 2026 MDS Enterprises</span>
-    <span class="footer__attribution"><a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a></span>
   </div>
 </footer>
+
+<!-- ====== CONTACT MODAL ====== -->
+<div class="modal-overlay" id="contactModal">
+  <div class="modal">
+    <button class="modal__close" id="modalClose" aria-label="Close">&times;</button>
+    <h2 class="modal__title">Let&#8217;s get started.</h2>
+    <p class="modal__sub">Leave your details and we&#8217;ll call you within 30 minutes.</p>
+    <form class="modal__form" id="contactForm">
+      <input type="hidden" name="_subject" value="New MDS Lead">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Thanks for reaching out to MDS Enterprises. We've received your details and will call you within 30 minutes during business hours. If you've reached us outside hours, we'll be in touch first thing. — James, MDS Enterprises">
+      <div class="modal__field">
+        <label for="formName">Name</label>
+        <input type="text" id="formName" name="name" required placeholder="Your name" autocomplete="name">
+      </div>
+      <div class="modal__field">
+        <label for="formEmail">Email</label>
+        <input type="email" id="formEmail" name="email" required placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div class="modal__field">
+        <label for="formMobile">Mobile</label>
+        <input type="tel" id="formMobile" name="mobile" required placeholder="04XX XXX XXX" autocomplete="tel">
+      </div>
+      <button type="submit" class="btn btn--primary btn--large modal__submit">Book my session</button>
+    </form>
+    <div class="modal__success" id="formSuccess" style="display:none;">
+      <div class="modal__success-icon">&#10003;</div>
+      <h3>You&#8217;re booked in.</h3>
+      <p>We&#8217;ll call you within 30 minutes.</p>
+    </div>
+  </div>
+</div>
 
 <script>
 (function() {
@@ -1390,6 +1510,7 @@ section {
 
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    if (a.hasAttribute('data-modal')) return;
     a.addEventListener('click', function(e) {
       var target = document.querySelector(this.getAttribute('href'));
       if (target) {
@@ -1419,6 +1540,79 @@ section {
       el.classList.add('is-visible');
     });
   }
+
+  // Contact modal
+  var modal = document.getElementById('contactModal');
+  var modalClose = document.getElementById('modalClose');
+  var contactForm = document.getElementById('contactForm');
+  var formSuccess = document.getElementById('formSuccess');
+
+  function openModal() {
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    contactForm.style.display = '';
+    formSuccess.style.display = 'none';
+    setTimeout(function() {
+      document.getElementById('formName').focus();
+    }, 100);
+  }
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+
+  // All buttons with data-modal open the form
+  document.querySelectorAll('[data-modal]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      openModal();
+    });
+  });
+
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var submitBtn = contactForm.querySelector('.modal__submit');
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    var formData = new FormData(contactForm);
+
+    fetch('https://formsubmit.co/ajax/c0d3ebccf239700f13cfdca36d05749f', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    })
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      if (data.success === 'true' || data.success === true) {
+        contactForm.style.display = 'none';
+        formSuccess.style.display = 'block';
+        contactForm.reset();
+        submitBtn.textContent = 'Book my session';
+        submitBtn.disabled = false;
+        setTimeout(closeModal, 3500);
+      } else {
+        submitBtn.textContent = 'Book my session';
+        submitBtn.disabled = false;
+        alert('Something went wrong. Please try again.');
+      }
+    })
+    .catch(function() {
+      submitBtn.textContent = 'Book my session';
+      submitBtn.disabled = false;
+      alert('Something went wrong. Please try again.');
+    });
+  });
 })();
 </script>
 </body>
