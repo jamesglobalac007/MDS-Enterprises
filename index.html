@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
 <!--
    ______                            __
@@ -11,8 +11,6 @@
         Created with Perplexity Computer
         https://www.perplexity.ai/computer
 -->
-
-<!-- Perplexity Computer Attribution — SEO Meta Tags -->
 <meta name="generator" content="Perplexity Computer">
 <meta name="author" content="Perplexity Computer">
 <meta property="og:see_also" content="https://www.perplexity.ai/computer">
@@ -20,46 +18,38 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MDS Enterprises — Database Revival for Mortgage Brokers</title>
-<meta name="description" content="MDS Enterprises helps Australian mortgage brokers unlock warm opportunities hiding in their existing CRM. Free 30-minute Database Discovery Session.">
-
-<!-- Open Graph -->
-<meta property="og:title" content="MDS Enterprises — Database Revival for Mortgage Brokers">
-<meta property="og:description" content="Turn your old clients into new deals. We help mortgage brokers find warm opportunities hiding in their CRM.">
+<title>MDS Enterprises — Database Revitalisation &amp; Systems</title>
+<meta name="description" content="MDS Enterprises revitalises neglected databases to increase revenue and builds systems to reduce costs. Free discovery session — we'll find gold in your database in 30 minutes.">
+<meta property="og:title" content="MDS Enterprises — Database Revitalisation &amp; Systems">
+<meta property="og:description" content="Revitalise your database. Build the systems. Watch revenue grow. Free discovery session.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MDS Enterprises">
 
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
-
-<!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2301696F'/%3E%3Ctext x='16' y='22' font-family='serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EMDS%3C/text%3E%3C/svg%3E">
 
 <style>
-/* ==============================
-   CSS Custom Properties
-   ============================== */
+/* ============================================
+   TOKENS
+   ============================================ */
 :root {
-  /* Light mode (default) */
-  --bg: #F7F6F2;
-  --bg-surface: #F9F8F5;
-  --border: #D4D1CA;
-  --border-light: #E8E6E1;
-  --text: #28251D;
-  --text-muted: #7A7974;
-  --text-subtle: #9E9B95;
+  --bg: #111111;
+  --bg-elevated: #1A1A1A;
+  --border: #2A2A2A;
+  --border-light: #222222;
+  --text: #F0EDE6;
+  --text-muted: #A09A90;
+  --text-subtle: #6B6660;
   --accent: #01696F;
-  --accent-hover: #015458;
-  --accent-light: rgba(1, 105, 111, 0.08);
+  --accent-hover: #018A92;
+  --accent-light: rgba(1, 105, 111, 0.12);
   --white: #FFFFFF;
 
-  /* Typography */
   --font-serif: 'Instrument Serif', Georgia, serif;
   --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
-  /* Spacing */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -69,48 +59,41 @@
   --space-3xl: 4rem;
   --space-4xl: 6rem;
   --space-5xl: 8rem;
+  --space-6xl: 10rem;
 
-  /* Layout */
-  --max-width-narrow: 680px;
-  --max-width-medium: 860px;
-  --max-width-wide: 1040px;
+  --max-width: 1200px;
+  --content-width: 720px;
 
-  /* Radius */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
 
-  /* Transitions */
   --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
   --duration: 200ms;
 }
 
-[data-theme="dark"] {
-  --bg: #171614;
-  --bg-surface: #1E1D1A;
-  --border: #3A3833;
-  --border-light: #2A2925;
-  --text: #CDCCCA;
-  --text-muted: #8A8985;
-  --text-subtle: #5E5D59;
+[data-theme="light"] {
+  --bg: #F7F6F2;
+  --bg-elevated: #EFEDE8;
+  --border: #D8D5CE;
+  --border-light: #E8E6E0;
+  --text: #1A1915;
+  --text-muted: #6B6860;
+  --text-subtle: #9A9790;
   --accent: #01696F;
-  --accent-hover: #018A92;
-  --accent-light: rgba(1, 105, 111, 0.15);
-  --white: #FFFFFF;
+  --accent-hover: #015458;
+  --accent-light: rgba(1, 105, 111, 0.07);
 }
 
-/* ==============================
-   Reset & Base
-   ============================== */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 72px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -120,103 +103,70 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: var(--text);
-  background-color: var(--bg);
-  transition: background-color 0.3s var(--ease), color 0.3s var(--ease);
+  background: var(--bg);
+  transition: background 0.4s var(--ease), color 0.4s var(--ease);
 }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: color var(--duration) var(--ease);
-}
+a { color: var(--accent); text-decoration: none; transition: color var(--duration) var(--ease); }
+a:hover { color: var(--accent-hover); }
 
-a:hover {
-  color: var(--accent-hover);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* ==============================
-   Typography
-   ============================== */
 h1, h2, h3 {
   font-family: var(--font-serif);
   font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   color: var(--text);
 }
 
-h1 {
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
-  line-height: 1.1;
-}
+p { color: var(--text-muted); }
 
-h2 {
-  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-  margin-bottom: var(--space-lg);
-}
+img { display: block; max-width: 100%; }
 
-h3 {
-  font-size: 1.25rem;
-  margin-bottom: var(--space-sm);
-}
-
-p {
-  margin-bottom: var(--space-md);
-  color: var(--text-muted);
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-.label {
-  font-family: var(--font-sans);
-  font-size: 0.8125rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-subtle);
-}
-
-/* ==============================
-   Layout
-   ============================== */
+/* ============================================
+   LAYOUT
+   ============================================ */
 .container {
   width: 100%;
-  max-width: var(--max-width-wide);
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--space-xl);
 }
 
 .container--narrow {
-  max-width: var(--max-width-narrow);
-}
-
-.container--medium {
-  max-width: var(--max-width-medium);
+  max-width: var(--content-width);
 }
 
 section {
-  padding: var(--space-5xl) 0;
+  padding: var(--space-6xl) 0;
 }
 
-/* ==============================
-   Header / Navigation
-   ============================== */
+/* Editorial label */
+.label {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  margin-bottom: var(--space-lg);
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
 .header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--bg);
+  background: rgba(17, 17, 17, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-light);
-  transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  transition: background 0.4s var(--ease);
+}
+
+[data-theme="light"] .header {
+  background: rgba(247, 246, 242, 0.9);
 }
 
 .header__inner {
@@ -230,73 +180,58 @@ section {
 .header__brand {
   display: flex;
   align-items: center;
-  gap: var(--space-sm);
+  gap: 10px;
   text-decoration: none;
   flex-shrink: 0;
 }
 
 .header__logo {
-  width: 36px;
-  height: 36px;
-}
-
-.header__brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
+  width: 34px;
+  height: 34px;
 }
 
 .header__brand-name {
   font-family: var(--font-sans);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.9375rem;
+  font-weight: 500;
   color: var(--text);
   letter-spacing: -0.01em;
-}
-
-.header__brand-descriptor {
-  font-family: var(--font-sans);
-  font-size: 0.6875rem;
-  color: var(--text-subtle);
-  letter-spacing: 0.02em;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
 }
 
 .header__nav-link {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
   color: var(--text-muted);
   text-decoration: none;
   transition: color var(--duration) var(--ease);
-  white-space: nowrap;
+  letter-spacing: 0.01em;
 }
 
-.header__nav-link:hover {
-  color: var(--text);
-}
+.header__nav-link:hover { color: var(--text); }
 
 .header__actions {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
+  gap: var(--space-sm);
 }
 
-/* Theme toggle */
 .theme-toggle {
   background: none;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: var(--text-muted);
+  color: var(--text-subtle);
   transition: all var(--duration) var(--ease);
   flex-shrink: 0;
 }
@@ -306,17 +241,12 @@ section {
   color: var(--text);
 }
 
-.theme-toggle svg {
-  width: 18px;
-  height: 18px;
-}
+.theme-toggle svg { width: 16px; height: 16px; }
+.theme-toggle .icon-moon { display: none; }
+.theme-toggle .icon-sun { display: block; }
+[data-theme="light"] .theme-toggle .icon-moon { display: block; }
+[data-theme="light"] .theme-toggle .icon-sun { display: none; }
 
-.theme-toggle .icon-moon { display: block; }
-.theme-toggle .icon-sun { display: none; }
-[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
-[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
-
-/* Mobile menu button */
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -326,44 +256,41 @@ section {
   padding: var(--space-xs);
 }
 
-.mobile-menu-btn svg {
-  width: 24px;
-  height: 24px;
-}
+.mobile-menu-btn svg { width: 22px; height: 22px; }
 
-/* ==============================
-   Buttons
-   ============================== */
+/* ============================================
+   BUTTONS
+   ============================================ */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-sans);
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 500;
   padding: 0.75rem 1.5rem;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   border: none;
   cursor: pointer;
   text-decoration: none;
   transition: all var(--duration) var(--ease);
   white-space: nowrap;
+  letter-spacing: 0.01em;
 }
 
 .btn--primary {
-  background-color: var(--accent);
+  background: var(--accent);
   color: var(--white);
 }
 
 .btn--primary:hover {
-  background-color: var(--accent-hover);
+  background: var(--accent-hover);
   color: var(--white);
 }
 
 .btn--sm {
   font-size: 0.8125rem;
   padding: 0.5rem 1.125rem;
-  border-radius: 8px;
 }
 
 .btn--outline {
@@ -373,226 +300,463 @@ section {
 }
 
 .btn--outline:hover {
-  background-color: var(--accent-light);
+  background: var(--accent-light);
   color: var(--accent);
 }
 
-/* ==============================
-   Hero
-   ============================== */
+.btn--large {
+  font-size: 0.9375rem;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-md);
+}
+
+/* ============================================
+   HERO
+   ============================================ */
 .hero {
-  padding: var(--space-5xl) 0;
-  text-align: center;
+  position: relative;
+  padding: var(--space-6xl) 0 var(--space-5xl);
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.hero__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 17, 17, 0.55) 0%,
+    rgba(17, 17, 17, 0.30) 40%,
+    rgba(17, 17, 17, 0.75) 100%
+  );
+}
+
+[data-theme="light"] .hero__bg::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(247, 246, 242, 0.82) 0%,
+    rgba(247, 246, 242, 0.70) 40%,
+    rgba(247, 246, 242, 0.88) 100%
+  );
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero__label {
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+  color: var(--text-muted);
 }
 
 .hero h1 {
-  margin-bottom: var(--space-xl);
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: clamp(2.75rem, 6.5vw, 5.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  max-width: 1000px;
+  margin-bottom: var(--space-2xl);
+  text-shadow: 0 2px 20px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.4);
 }
 
 .hero__sub {
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   line-height: 1.7;
   color: var(--text-muted);
-  max-width: 520px;
-  margin: 0 auto var(--space-2xl);
+  max-width: 540px;
+  margin-bottom: var(--space-2xl);
+  text-shadow: 0 1px 10px rgba(0,0,0,0.5);
 }
 
-/* ==============================
-   Problem Section
-   ============================== */
-.problem {
-  padding: var(--space-5xl) 0;
+/* ============================================
+   GUARANTEE
+   ============================================ */
+.guarantee {
+  padding: var(--space-6xl) 0;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
 }
 
-.problem p {
-  font-size: 1.0625rem;
+.guarantee__inner {
+  max-width: 680px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.guarantee h2 {
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-xl);
+}
+
+.guarantee__text {
+  font-size: 1.125rem;
   line-height: 1.8;
-  margin-bottom: var(--space-lg);
+  color: var(--text-muted);
+  margin-bottom: var(--space-2xl);
 }
 
-/* ==============================
-   How It Works
-   ============================== */
+/* ============================================
+   PULL QUOTES
+   ============================================ */
+.pull-quote {
+  padding: var(--space-4xl) 0;
+  text-align: center;
+}
+
+.pull-quote__text {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  font-style: italic;
+  line-height: 1.3;
+  color: var(--text);
+  max-width: 800px;
+  margin: 0 auto;
+  letter-spacing: -0.01em;
+}
+
+/* ============================================
+   FULL-BLEED IMAGE
+   ============================================ */
+.image-break {
+  padding: 0 var(--space-xl);
+}
+
+.image-break__img {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .image-break__img {
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.image-break__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+/* ============================================
+   THE PROBLEM
+   ============================================ */
+.problem {
+  padding: var(--space-6xl) 0 var(--space-4xl);
+}
+
+.problem h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  margin-bottom: var(--space-3xl);
+  max-width: 600px;
+}
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl) var(--space-4xl);
+}
+
+.problems-grid__item {
+  /* No card, no border — just typography and space */
+}
+
+.problems-grid__number {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  color: var(--accent);
+  opacity: 0.35;
+  line-height: 1;
+  margin-bottom: var(--space-sm);
+  font-style: italic;
+}
+
+[data-theme="light"] .problems-grid__number {
+  color: var(--accent);
+  opacity: 0.4;
+}
+
+.problems-grid__item h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: var(--space-sm);
+  line-height: 1.3;
+}
+
+.problems-grid__item p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.problems-grid__close {
+  margin-top: var(--space-3xl);
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ============================================
+   HOW IT WORKS / PRICING
+   ============================================ */
 .how-it-works {
-  padding: var(--space-5xl) 0;
+  padding: var(--space-6xl) 0;
+}
+
+.how-it-works h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  margin-bottom: var(--space-lg);
 }
 
 .how-it-works__intro {
   font-size: 1.0625rem;
   line-height: 1.8;
-  margin-bottom: var(--space-3xl);
+  color: var(--text-muted);
+  max-width: 560px;
+  margin-bottom: var(--space-4xl);
 }
 
 .steps {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-lg);
-}
-
-.step {
-  padding: var(--space-xl);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  background-color: var(--bg-surface);
-  transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease);
-}
-
-.step__number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: var(--accent-light);
-  color: var(--accent);
-  font-family: var(--font-sans);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  margin-bottom: var(--space-md);
-}
-
-.step h3 {
-  font-family: var(--font-serif);
-  font-size: 1.125rem;
-  margin-bottom: var(--space-sm);
-  color: var(--text);
-}
-
-.step p {
-  font-size: 0.9375rem;
-  line-height: 1.7;
-  color: var(--text-muted);
-}
-
-/* ==============================
-   Pricing / Sprint
-   ============================== */
-.sprint {
-  padding: var(--space-5xl) 0;
-}
-
-.sprint__intro {
-  font-size: 1.0625rem;
-  line-height: 1.8;
-  margin-bottom: var(--space-3xl);
-}
-
-.pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
 }
 
-.pricing-card {
-  padding: var(--space-2xl);
-  border: 1px solid var(--border);
+.step {
+  padding: var(--space-2xl) var(--space-xl);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  background-color: var(--bg-surface);
-  position: relative;
-  transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease);
+  background: var(--bg);
+  transition: background 0.3s var(--ease), border-color 0.3s var(--ease);
+  display: flex;
+  flex-direction: column;
 }
 
-.pricing-card--featured {
+.step--featured {
   border-color: var(--accent);
-  border-width: 2px;
+  border-width: 1.5px;
+  position: relative;
 }
 
-.pricing-card__badge {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--accent);
-  color: var(--white);
+.step__tier {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0.25rem 0.875rem;
-  border-radius: 20px;
-  white-space: nowrap;
-  letter-spacing: 0.02em;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  margin-bottom: var(--space-lg);
 }
 
-.pricing-card__name {
+.step--featured .step__tier {
+  color: var(--accent);
+}
+
+.step h3 {
   font-family: var(--font-serif);
-  font-size: 1.375rem;
-  color: var(--text);
+  font-size: 1.5rem;
   margin-bottom: var(--space-xs);
+  color: var(--text);
 }
 
-.pricing-card__price {
+.step__price {
   font-family: var(--font-sans);
-  font-size: 2rem;
+  font-size: 1.625rem;
   font-weight: 600;
   color: var(--text);
   margin-bottom: var(--space-xs);
+  letter-spacing: -0.02em;
 }
 
-.pricing-card__price-note {
+.step__price span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.step__price-note {
   font-size: 0.8125rem;
   color: var(--text-subtle);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-xl);
 }
 
-.pricing-card__desc {
+.step__desc {
   font-size: 0.9375rem;
   color: var(--text-muted);
+  line-height: 1.7;
   margin-bottom: var(--space-xl);
   padding-bottom: var(--space-xl);
   border-bottom: 1px solid var(--border-light);
+  flex-grow: 1;
 }
 
-.pricing-card__features {
+.step__features {
   list-style: none;
   margin-bottom: var(--space-xl);
 }
 
-.pricing-card__features li {
+.step__features li {
   font-size: 0.875rem;
   color: var(--text-muted);
-  padding: 0.375rem 0;
-  padding-left: 1.25rem;
+  padding: 0.375rem 0 0.375rem 1.25rem;
   position: relative;
   line-height: 1.5;
 }
 
-.pricing-card__features li::before {
+.step__features li::before {
   content: '';
   position: absolute;
   left: 0;
   top: 0.6rem;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  background-color: var(--accent);
-  opacity: 0.6;
+  background: var(--accent);
+  opacity: 0.5;
 }
 
-.pricing-note {
-  text-align: center;
-  margin-top: var(--space-2xl);
+.step .btn {
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Bespoke note */
+.step__bespoke {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+/* ============================================
+   INSIDE THE FIX
+   ============================================ */
+.inside {
+  padding: var(--space-6xl) 0;
+}
+
+.inside h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  margin-bottom: var(--space-4xl);
+}
+
+.inside__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2xl);
+}
+
+.inside__phase {}
+
+.inside__phase-label {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+}
+
+.inside__phase h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--text);
+  margin-bottom: var(--space-lg);
+  font-weight: 400;
+}
+
+.inside__phase-list {
+  list-style: none;
+}
+
+.inside__phase-list li {
   font-size: 0.875rem;
-  color: var(--text-subtle);
+  color: var(--text-muted);
+  padding: 0.4rem 0;
+  line-height: 1.6;
+  border-bottom: 1px solid var(--border-light);
 }
 
-/* ==============================
+.inside__phase-list li:last-child {
+  border-bottom: none;
+}
+
+/* ============================================
+   VALUE COMPARISON
+   ============================================ */
+.value-section {
+  padding: var(--space-4xl) 0;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-3xl) 0;
+}
+
+.value-item {}
+
+.value-item__number {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.02em;
+}
+
+.value-item__label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ============================================
    FAQ
-   ============================== */
+   ============================================ */
 .faq {
-  padding: var(--space-5xl) 0;
+  padding: var(--space-6xl) 0;
 }
 
-.faq-list {
-  margin-top: var(--space-2xl);
+.faq h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  margin-bottom: var(--space-3xl);
 }
+
+.faq-list {}
 
 .faq-item {
   border-bottom: 1px solid var(--border-light);
@@ -608,7 +772,7 @@ section {
   border: none;
   padding: var(--space-lg) 0;
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: 500;
   color: var(--text);
   text-align: left;
@@ -616,19 +780,17 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-md);
+  gap: var(--space-lg);
   transition: color var(--duration) var(--ease);
   line-height: 1.5;
 }
 
-.faq-question:hover {
-  color: var(--accent);
-}
+.faq-question:hover { color: var(--accent); }
 
 .faq-question__icon {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   transition: transform 0.3s var(--ease);
   color: var(--text-subtle);
 }
@@ -650,86 +812,61 @@ section {
   color: var(--text-muted);
 }
 
-/* ==============================
-   Security
-   ============================== */
-.security {
-  padding: var(--space-5xl) 0;
+/* ============================================
+   ABOUT
+   ============================================ */
+.about {
+  padding: var(--space-6xl) 0;
 }
 
-.security p {
+.about h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  margin-bottom: var(--space-2xl);
+  max-width: 480px;
+}
+
+.about__text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  max-width: 900px;
+}
+
+.about__text p {
   font-size: 1rem;
   line-height: 1.8;
-  margin-bottom: var(--space-lg);
 }
 
-.compliance-list {
-  list-style: none;
-  margin-top: var(--space-md);
-  margin-bottom: var(--space-lg);
-}
-
-.compliance-list li {
-  font-size: 0.9375rem;
-  color: var(--text-muted);
-  padding: 0.375rem 0;
-  padding-left: 1.25rem;
-  position: relative;
-  line-height: 1.6;
-}
-
-.compliance-list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.65rem;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: var(--accent);
-  opacity: 0.5;
-}
-
-/* ==============================
-   About
-   ============================== */
-.about {
-  padding: var(--space-5xl) 0;
-}
-
-.about p {
-  font-size: 1.0625rem;
-  line-height: 1.8;
-}
-
-/* ==============================
-   Final CTA
-   ============================== */
+/* ============================================
+   FINAL CTA
+   ============================================ */
 .final-cta {
-  padding: var(--space-5xl) 0;
+  padding: var(--space-6xl) 0;
   text-align: center;
 }
 
 .final-cta h2 {
-  font-size: clamp(1.75rem, 3vw, 2.25rem);
-  max-width: 580px;
-  margin: 0 auto var(--space-lg);
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3.25rem);
   font-style: italic;
+  max-width: 680px;
+  margin: 0 auto var(--space-lg);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 .final-cta p {
   font-size: 1.0625rem;
-  max-width: 480px;
-  margin: 0 auto var(--space-2xl);
+  color: var(--text-muted);
+  margin-bottom: var(--space-2xl);
 }
 
-/* ==============================
-   Footer
-   ============================== */
+/* ============================================
+   FOOTER
+   ============================================ */
 .footer {
   padding: var(--space-2xl) 0;
   border-top: 1px solid var(--border-light);
-  text-align: center;
 }
 
 .footer__inner {
@@ -760,16 +897,65 @@ section {
   color: var(--text-muted);
 }
 
-/* ==============================
-   Mobile Responsive
-   ============================== */
+/* ============================================
+   DIVIDER
+   ============================================ */
+.section-divider {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+.section-divider__line {
+  height: 1px;
+  background: var(--border-light);
+}
+
+/* ============================================
+   MOBILE RESPONSIVE
+   ============================================ */
+@media (max-width: 900px) {
+  .steps {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+
+  .inside__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .about__text {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
 @media (max-width: 768px) {
   section {
-    padding: var(--space-3xl) 0;
+    padding: var(--space-4xl) 0;
   }
 
   .hero {
-    padding: var(--space-3xl) 0;
+    padding: var(--space-4xl) 0 var(--space-3xl);
+    min-height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.25rem, 8vw, 3.25rem);
+  }
+
+  .container {
+    padding: 0 var(--space-lg);
+  }
+
+  .image-break {
+    padding: 0 var(--space-lg);
   }
 
   .header__nav {
@@ -778,404 +964,419 @@ section {
     top: 64px;
     left: 0;
     right: 0;
-    background-color: var(--bg);
+    background: var(--bg);
     border-bottom: 1px solid var(--border-light);
     flex-direction: column;
-    padding: var(--space-lg) var(--space-xl);
+    padding: var(--space-lg) var(--space-lg);
     gap: var(--space-md);
     align-items: flex-start;
   }
 
-  .header__nav.is-open {
-    display: flex;
-  }
+  .header__nav.is-open { display: flex; }
 
-  .mobile-menu-btn {
-    display: block;
-  }
+  .mobile-menu-btn { display: block; }
 
-  .header__actions .btn {
-    display: none;
-  }
+  .header__actions .btn { display: none; }
 
-  .steps {
+  .problems-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-2xl);
   }
 
-  .pricing-grid {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto;
+  .phase-pricing {
+    flex-direction: column;
+  }
+
+  .value-grid {
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .value-item {
+    padding-bottom: var(--space-xl);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .value-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
   .footer__inner {
     flex-direction: column;
     text-align: center;
   }
-
-  .container {
-    padding: 0 var(--space-lg);
-  }
 }
 
 @media (max-width: 480px) {
-  h1 {
+  .hero h1 {
     font-size: 2rem;
   }
 
-  h2 {
-    font-size: 1.5rem;
+  .image-break__img {
+    border-radius: var(--radius-md);
   }
+}
+
+/* ============================================
+   ANIMATION: fade in on scroll
+   ============================================ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>
 </head>
 <body>
 
-<!-- ======================== HEADER ======================== -->
+<!-- ====== HEADER ====== -->
 <header class="header">
   <div class="container header__inner">
     <a href="#" class="header__brand" aria-label="MDS Enterprises home">
-      <!-- Inline SVG Logo -->
-      <svg class="header__logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="MDS Enterprises logo">
-        <rect x="0.5" y="0.5" width="35" height="35" rx="7.5" stroke="currentColor" stroke-opacity="0.2"/>
-        <text x="18" y="23.5" font-family="'Instrument Serif', Georgia, serif" font-size="15" fill="currentColor" text-anchor="middle" font-weight="400">MDS</text>
+      <svg class="header__logo" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="MDS Enterprises logo">
+        <rect x="1" y="1" width="32" height="32" rx="4" stroke="currentColor" stroke-width="1" opacity="0.35"/>
+        <text x="17" y="21.5" font-family="'Instrument Serif', Georgia, serif" font-size="12.5" fill="currentColor" text-anchor="middle" font-weight="400" letter-spacing="0.5">MDS</text>
       </svg>
-      <span class="header__brand-text">
-        <span class="header__brand-name">MDS Enterprises</span>
-        <span class="header__brand-descriptor">Database Revival</span>
-      </span>
+      <span class="header__brand-name">MDS Enterprises</span>
     </a>
-
     <nav class="header__nav" id="mainNav">
       <a href="#how-it-works" class="header__nav-link">How It Works</a>
-      <a href="#pricing" class="header__nav-link">Pricing</a>
       <a href="#faq" class="header__nav-link">FAQ</a>
       <a href="#about" class="header__nav-link">About</a>
     </nav>
-
     <div class="header__actions">
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
       </button>
-      <!-- Replace #book with Calendly link -->
-      <a href="#book" class="btn btn--primary btn--sm">Book Free Session</a>
+      <a href="#book" class="btn btn--primary btn--sm">Book a session</a>
       <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-          <line x1="4" y1="7" x2="20" y2="7"/>
-          <line x1="4" y1="12" x2="20" y2="12"/>
-          <line x1="4" y1="17" x2="20" y2="17"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
       </button>
     </div>
   </div>
 </header>
 
-<!-- ======================== HERO ======================== -->
+<!-- ====== HERO ====== -->
 <section class="hero" id="hero">
-  <div class="container container--narrow">
-    <p class="label hero__label">Database Revival for Mortgage Brokers</p>
-    <h1>Your next deals are already in your database.</h1>
-    <p class="hero__sub">We help mortgage brokers find warm opportunities hiding in their CRM — without spending a dollar on new leads.</p>
-    <!-- Replace #book with Calendly link -->
-    <a href="#book" class="btn btn--primary">Book your free discovery session</a>
+  <div class="hero__bg">
+    <img src="mds-systems-flow.png" alt="" loading="eager" aria-hidden="true">
+  </div>
+  <div class="container">
+    <p class="label hero__label">Database Revitalisation &amp; Systems</p>
+    <h1>Revitalise your database.<br>Build the systems.<br>Watch revenue grow.</h1>
+    <p class="hero__sub">Your database is full of gold. We help you dig it out and build the systems that keep it flowing. Free discovery session.</p>
+    <a href="#book" class="btn btn--primary btn--large">Book your free session</a>
   </div>
 </section>
 
-<!-- ======================== THE PROBLEM ======================== -->
+<!-- ====== GUARANTEE ====== -->
+<section class="guarantee">
+  <div class="container">
+    <div class="guarantee__inner fade-in">
+      <p class="label">Our Promise</p>
+      <h2>We put our money<br>where our mouth is.</h2>
+      <p class="guarantee__text">Your database is full of forgotten customers, old enquiries, people who said "not yet" — all of it untouched gold. We’ll go in, revitalise it live, and produce a hot lead within 30 minutes. If we can’t find gold in your database, you owe us nothing. No invoice. No follow-up. No catch.</p>
+      <a href="#book" class="btn btn--primary btn--large">Test us — book a free session</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== THE PROBLEM ====== -->
 <section class="problem" id="problem">
-  <div class="container container--narrow">
+  <div class="container">
     <p class="label">The Problem</p>
-    <h2>Most brokerages are sitting on a goldmine they never touch.</h2>
-    <p>You've spent years building a database of clients and leads. Past clients who settled years ago. Pre-approvals that expired. Enquiries that went quiet.</p>
-    <p>But without a system to surface them, they slip through the cracks — and someone else picks them up.</p>
-    <p>Meanwhile, you're spending thousands chasing new leads when the easiest deals are already in your CRM.</p>
+    <h2>Every business bleeds revenue and burns costs in the same six places.</h2>
+    <div class="problems-grid">
+      <div class="problems-grid__item fade-in">
+        <div class="problems-grid__number">1</div>
+        <h3>Neglected database</h3>
+        <p>Old customers and past enquiries left to rot. That’s not dead data — it’s untouched revenue waiting to be revitalised.</p>
+      </div>
+      <div class="problems-grid__item fade-in">
+        <div class="problems-grid__number">2</div>
+        <h3>Weak online presence</h3>
+        <p>Your website doesn't reflect your business.</p>
+      </div>
+      <div class="problems-grid__item fade-in">
+        <div class="problems-grid__number">3</div>
+        <h3>No systems</h3>
+        <p>Hours burned on tasks that smart systems handle in seconds. No systems means higher costs, every single day.</p>
+      </div>
+      <div class="problems-grid__item fade-in">
+        <div class="problems-grid__number">4</div>
+        <h3>No follow-up system</h3>
+        <p>Customers leave without a word because there’s no system to bring them back. Revenue walks out the door.</p>
+      </div>
+      <div class="problems-grid__item fade-in">
+        <div class="problems-grid__number">5</div>
+        <h3>Nobody working the database</h3>
+        <p>Too busy. No momentum. The database doesn’t revitalise itself.</p>
+      </div>
+      <div class="problems-grid__item fade-in">
+        <div class="problems-grid__number">6</div>
+        <h3>Disconnected from customers</h3>
+        <p>So deep in operations you’ve lost touch with the people who actually pay you. That’s revenue slipping away quietly.</p>
+      </div>
+    </div>
+    <p class="problems-grid__close fade-in">Revitalise the database — revenue goes up. Build the systems — costs come down.</p>
   </div>
 </section>
 
-<!-- ======================== HOW IT WORKS ======================== -->
+<div class="pull-quote">
+  <div class="container">
+    <p class="pull-quote__text fade-in">&ldquo;The revenue is there. You just need to remove the dust.&rdquo;</p>
+  </div>
+</div>
+
+<!-- ====== HOW IT WORKS ====== -->
 <section class="how-it-works" id="how-it-works">
-  <div class="container container--medium">
+  <div class="container">
     <p class="label">How It Works</p>
-    <h2>Give us 30 minutes in your database.</h2>
-    <p class="how-it-works__intro">We log into your CRM over Zoom and show you at least 5 warm opportunities you can contact in the next 30 days. If we can't find them, we walk away — no fee, no catch.</p>
+    <h2>Discover. Revitalise. Systemise.</h2>
+    <p class="how-it-works__intro">Every engagement starts with a free session where we revitalise your database live and prove there’s gold in it. From there, we build the systems your business needs to keep revenue flowing and costs down.</p>
 
     <div class="steps">
-      <div class="step">
-        <div class="step__number">1</div>
-        <h3>Book a 30-minute Zoom call</h3>
-        <p>Pick a time that works for you. We'll send a Zoom link and a short prep checklist.</p>
+      <!-- Free Discovery -->
+      <div class="step fade-in">
+        <div class="step__tier">Start here</div>
+        <h3>Free Discovery</h3>
+        <p class="step__desc">We go through your database live and show you the gold sitting right there — forgotten customers, old enquiries, missed opportunities. We’ll produce a hot lead within 30 minutes to prove it can be done.</p>
+        <ul class="step__features">
+          <li>30-minute live database revitalisation</li>
+          <li>Hot lead produced on the spot</li>
+          <li>Revenue opportunities identified live</li>
+          <li>Your data never leaves your screen</li>
+        </ul>
+        <a href="#book" class="btn btn--primary">Book free session</a>
       </div>
-      <div class="step">
-        <div class="step__number">2</div>
-        <h3>Share your screen or grant temporary CRM access</h3>
-        <p>You stay in control. We work inside your system under your permissions.</p>
+
+      <!-- Bespoke Fix -->
+      <div class="step step--featured fade-in">
+        <div class="step__tier">Bespoke program</div>
+        <h3>The Fix</h3>
+        <p class="step__desc">Full database revitalisation and systems build. We hammer the database to unlock revenue, then build the systems that reduce your costs and keep the momentum going. Every solution built from scratch.</p>
+        <ul class="step__features">
+          <li>Complete database revitalisation</li>
+          <li>Systems built to reduce costs</li>
+          <li>Website and marketing rebuilt</li>
+          <li>Smart automations that run without you</li>
+          <li>Staff trained and playbook delivered</li>
+        </ul>
+        <div class="step__bespoke">Scope and investment discussed after your free discovery session.</div>
+        <a href="#book" class="btn btn--primary">Book a session to learn more</a>
       </div>
-      <div class="step">
-        <div class="step__number">3</div>
-        <h3>We scan for warm opportunities</h3>
-        <p>Fixed-rate expiries, refinance candidates, expired pre-approvals, lost deals, and dormant clients.</p>
-      </div>
-      <div class="step">
-        <div class="step__number">4</div>
-        <h3>You walk away with a list of real people to call</h3>
-        <p>Actionable contacts you can reach out to this week, with context on why they're warm.</p>
+
+      <!-- Stay Sharp -->
+      <div class="step fade-in">
+        <div class="step__tier">Ongoing</div>
+        <h3>Stay Sharp</h3>
+        <p class="step__desc">Ongoing advisory to keep your database alive and your systems sharp. We stay in your corner to make sure revenue keeps growing and costs keep falling.</p>
+        <ul class="step__features">
+          <li>Fortnightly database and systems review</li>
+          <li>Performance tracking against KPIs</li>
+          <li>System refinements and updates</li>
+          <li>Priority email and phone support</li>
+          <li>Quarterly deep-dive session</li>
+        </ul>
+        <a href="#book" class="btn btn--outline">Learn more</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ======================== THE SPRINT / PRICING ======================== -->
-<section class="sprint" id="pricing">
-  <div class="container container--wide">
-    <div class="container--narrow" style="margin: 0 auto;">
-      <p class="label">Pricing</p>
-      <h2>The Database Revival Sprint</h2>
-      <p class="sprint__intro">After the free session, most brokers want to unlock the full potential of their database. The 30-Day Database Revival Sprint is a done-with-you project where we build a complete re-engagement system: segments, campaigns, automations, and a repeatable playbook.</p>
-    </div>
+<div class="pull-quote">
+  <div class="container">
+    <p class="pull-quote__text fade-in">“The gold is already on the floor. You just need to change the way you pick it up.”</p>
+  </div>
+</div>
 
-    <div class="pricing-grid">
-      <!-- Lite -->
-      <div class="pricing-card">
-        <div class="pricing-card__name">Lite</div>
-        <div class="pricing-card__price">$1,500</div>
-        <div class="pricing-card__price-note">ex GST</div>
-        <p class="pricing-card__desc">Best for solo brokers with up to 500 contacts.</p>
-        <ul class="pricing-card__features">
-          <li>Database audit and cleanup</li>
-          <li>3 core segments built</li>
-          <li>3 email templates, 1 call script</li>
-          <li>Top 20 priority hit list</li>
-          <li>Loom video handover</li>
+<!-- ====== INSIDE THE FIX ====== -->
+<section class="inside" id="inside">
+  <div class="container">
+    <p class="label">Inside The Fix</p>
+    <h2>What we do inside your business.</h2>
+    <div class="inside__grid">
+      <div class="inside__phase fade-in">
+        <div class="inside__phase-label">Phase 1</div>
+        <h3>Database Revitalisation</h3>
+        <ul class="inside__phase-list">
+          <li>Full database audit and health check</li>
+          <li>Identify dormant gold — old customers, lapsed enquiries</li>
+          <li>Revenue opportunities mapped</li>
+          <li>Quick wins executed on the spot</li>
         </ul>
-        <!-- Replace #book with Calendly link -->
-        <a href="#book" class="btn btn--outline" style="width: 100%;">Get started</a>
       </div>
-
-      <!-- Standard (Featured) -->
-      <div class="pricing-card pricing-card--featured">
-        <div class="pricing-card__badge">Most popular</div>
-        <div class="pricing-card__name">Standard</div>
-        <div class="pricing-card__price">$3,500</div>
-        <div class="pricing-card__price-note">ex GST</div>
-        <p class="pricing-card__desc">Best for small teams with up to 2,000 contacts.</p>
-        <ul class="pricing-card__features">
-          <li>Everything in Lite, plus:</li>
-          <li>6 segments, 6 email templates, 3 SMS templates</li>
-          <li>3 segment-specific call scripts</li>
-          <li>Drip sequences and CRM automations</li>
-          <li>Top 50 priority hit list</li>
-          <li>Written playbook + 2 weeks email support</li>
+      <div class="inside__phase fade-in">
+        <div class="inside__phase-label">Phase 2</div>
+        <h3>Systems Build</h3>
+        <ul class="inside__phase-list">
+          <li>Automations that reduce costs</li>
+          <li>Follow-up systems that never drop a lead</li>
+          <li>Website and marketing rebuilt</li>
+          <li>CRM cleaned and restructured</li>
+          <li>Tools audit — cut what’s wasting money</li>
         </ul>
-        <!-- Replace #book with Calendly link -->
-        <a href="#book" class="btn btn--primary" style="width: 100%;">Get started</a>
       </div>
-
-      <!-- Premium -->
-      <div class="pricing-card">
-        <div class="pricing-card__name">Premium</div>
-        <div class="pricing-card__price">$6,500</div>
-        <div class="pricing-card__price-note">ex GST</div>
-        <p class="pricing-card__desc">Best for growing brokerages with unlimited contacts.</p>
-        <ul class="pricing-card__features">
-          <li>Everything in Standard, plus:</li>
-          <li>Custom segments with lead scoring</li>
-          <li>10+ email templates, 6 SMS templates</li>
-          <li>Full automation + lead scoring</li>
-          <li>Top 50 hit list with monthly refresh</li>
-          <li>Live training session + 30 days support</li>
+      <div class="inside__phase fade-in">
+        <div class="inside__phase-label">Phase 3</div>
+        <h3>Momentum &amp; Handover</h3>
+        <ul class="inside__phase-list">
+          <li>Complete playbook for your team</li>
+          <li>Staff trained on database and systems</li>
+          <li>Action plan with KPIs</li>
+          <li>Momentum locked in — so it doesn’t stop when we leave</li>
         </ul>
-        <!-- Replace #book with Calendly link -->
-        <a href="#book" class="btn btn--outline" style="width: 100%;">Get started</a>
       </div>
     </div>
-
-    <p class="pricing-note">Payment: 50% upfront, 50% on handover. Optional add-on: Monthly retainer ($750–$1,500/month) for ongoing management.</p>
   </div>
 </section>
 
-<!-- ======================== FAQ ======================== -->
+<div class="pull-quote">
+  <div class="container">
+    <p class="pull-quote__text fade-in">“Every neglected database is a goldmine. Every missing system is a cost you don’t need to carry.”</p>
+  </div>
+</div>
+
+<!-- ====== FAQ ====== -->
 <section class="faq" id="faq">
   <div class="container container--narrow">
     <p class="label">FAQ</p>
     <h2>Frequently asked questions</h2>
-
     <div class="faq-list">
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>Is my client data safe?</span>
+          <span>What types of businesses do you work with?</span>
           <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer__inner">We work inside your CRM under your login or a limited-access account you control. Your data never leaves your system. We never download, export, or store client information. We're happy to sign an NDA before we start.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer__inner">Any small or medium business that wants to grow revenue and run more efficiently. We've worked across mortgage brokers, tradies, professional services, health practices, recruiters, and more. The problems are universal — our solutions adapt to your industry.</div></div>
       </div>
-
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>What CRMs do you work with?</span>
+          <span>Do you need access to my systems?</span>
           <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer__inner">Salestrekker, Mercury Nexus, HubSpot, Salesforce, and others. If your CRM has views, filters, and segments, we can work with it.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer__inner">Not initially. In our discovery session and audit, you share your screen — we look, we advise, we never touch your systems. If we move to the full program and need to set up workflows in your CRM, we do that via a limited-access account you control, with an NDA in place.</div></div>
       </div>
-
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>What if you can't find 5 opportunities?</span>
+          <span>What if I only need part of the program?</span>
           <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer__inner">We shake hands and walk away — no fee, no obligation. In a database of 200+ contacts, we've always been able to surface warm opportunities.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer__inner">Absolutely. Every engagement is bespoke — we can scope individual phases or focus on the areas that matter most to your business. We'll work that out together in your free discovery session.</div></div>
       </div>
-
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>Do you contact my clients directly?</span>
+          <span>How long does The Fix take?</span>
           <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer__inner">No. We identify opportunities and build campaigns. You or your team do the outreach. We draft the emails, SMS, and call scripts — you send them.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer__inner">Typically 4–8 weeks for the full program, depending on scope. Phase 1 alone takes 1–2 weeks.</div></div>
       </div>
-
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>Are the campaigns compliant?</span>
+          <span>What's the ROI?</span>
           <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer__inner">Every campaign complies with the Spam Act 2003, Australian Privacy Principles, and Do Not Call Register requirements. Proper consent checks, clear identification, functional unsubscribe, and DNCR list washing.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer__inner">Most clients see results in the first two weeks — reactivated leads, time saved on manual tasks, and a professional online presence that generates enquiries. The full program typically pays for itself within the first few months.</div></div>
       </div>
-
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>How much time do I need to commit?</span>
+          <span>Do I have to commit to ongoing advisory?</span>
           <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer__inner">The free session is 30 minutes. For the Sprint, about 2–3 hours over 30 days — kickoff, mid-point check-in, and handover. We do the heavy lifting.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer__inner">No. The Fix is standalone. You get the full system, the playbook, and the training. The advisory retainer is optional — for businesses that want ongoing support and accountability.</div></div>
       </div>
-
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>Can I start with the free session and decide later?</span>
+          <span>What do you mean by "smart automations"?</span>
           <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer__inner">Absolutely. The free session is standalone. You get your 5+ opportunities regardless. If you want to go deeper, we send a proposal within 24 hours.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer__inner">Simple, practical tools that save your team time — automated follow-up emails, appointment reminders, lead capture forms, review requests. Nothing complex. We set it up, show your team how it works, and it runs in the background.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How is this different from a marketing agency?</span>
+          <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer__inner">Agencies build you a website and send you an invoice. We audit your entire operation, fix your systems, rebuild your online presence, train your team, and hand you a playbook to keep it all running. We're not just building assets — we're fixing how your business generates revenue.</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ======================== SECURITY & PRIVACY ======================== -->
-<section class="security" id="security">
-  <div class="container container--narrow">
-    <p class="label">Security &amp; Privacy</p>
-    <h2>Your data stays in your system.</h2>
-    <p>All work is performed inside your existing CRM platform using access credentials you provide and control. No client data is exported, downloaded, copied, or stored outside your system. Access can be revoked by you at any time.</p>
-    <p><strong style="color: var(--text);">Compliance:</strong></p>
-    <ul class="compliance-list">
-      <li>Spam Act 2003 (Cth)</li>
-      <li>Australian Privacy Principles (Privacy Act 1988)</li>
-      <li>Do Not Call Register Act 2006</li>
-    </ul>
-    <p>We do not download or store loan documents, financial statements, or sensitive client records. We work with contact records, loan status fields, and settlement dates only.</p>
-  </div>
-</section>
-
-<!-- ======================== ABOUT ======================== -->
+<!-- ====== ABOUT ====== -->
 <section class="about" id="about">
-  <div class="container container--narrow">
+  <div class="container">
     <p class="label">About</p>
-    <h2>Built by a broker, for brokers.</h2>
-    <p>MDS Enterprises is run by an Australian mortgage broker and deal originator with years of experience inside CRMs like Salestrekker, Mercury Nexus, and HubSpot. We know how broker databases work, what gets overlooked, and where the warm opportunities hide.</p>
-    <p>Everything is done remotely via Zoom, Loom, and shared CRM access. No in-person meetings required.</p>
+    <h2>20,000+ hours on the phones. Every industry.</h2>
+    <div class="about__text">
+      <p>MDS Enterprises is run by someone who's sat inside CRMs, built outreach systems, managed databases, and closed deals across every industry imaginable — sales, mortgage broking, deal origination, business development. Not a big consultancy. Not a tech company. Problem solvers.</p>
+      <p>Everything is done remotely — Zoom, Loom, screen-share. No in-person meetings required. We work with businesses across Australia. We know what it looks like when a business is leaving money on the table. And we know how to fix it.</p>
+    </div>
   </div>
 </section>
 
-<!-- ======================== FINAL CTA ======================== -->
+<!-- ====== FINAL CTA ====== -->
 <section class="final-cta" id="book">
-  <div class="container container--narrow">
-    <p class="label">Get Started</p>
-    <h2>The worst case? You learn something new about your own database.</h2>
-    <p>Book your free 30-minute Database Discovery Session. No cost. No obligation. Just warm opportunities you can act on this week.</p>
-    <!-- Replace #book with Calendly link -->
-    <a href="#book" class="btn btn--primary">Book your free session</a>
+  <div class="container">
+    <h2>Your business is leaving money on the table.</h2>
+    <p>30 minutes. Free. No obligation.</p>
+    <a href="#book" class="btn btn--primary btn--large">Let's talk</a>
   </div>
 </section>
 
-<!-- ======================== FOOTER ======================== -->
+<!-- ====== FOOTER ====== -->
 <footer class="footer">
   <div class="container footer__inner">
-    <span class="footer__copy">&copy; 2026 MDS Enterprises. All rights reserved.</span>
-    <span class="footer__attribution">
-      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
-    </span>
+    <span class="footer__copy">&copy; 2026 MDS Enterprises</span>
+    <span class="footer__attribution"><a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a></span>
   </div>
 </footer>
 
-<!-- ======================== JAVASCRIPT ======================== -->
 <script>
 (function() {
   'use strict';
 
-  // ---- Theme Toggle ----
-  const themeToggle = document.getElementById('themeToggle');
-  const html = document.documentElement;
+  // Theme toggle
+  var toggle = document.getElementById('themeToggle');
+  var html = document.documentElement;
 
-  // Check saved preference or system preference
-  const saved = localStorage.getItem('theme');
-  if (saved) {
-    html.setAttribute('data-theme', saved);
-  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    html.setAttribute('data-theme', 'dark');
-  }
-
-  themeToggle.addEventListener('click', function() {
-    const current = html.getAttribute('data-theme');
-    const next = current === 'dark' ? 'light' : 'dark';
+  toggle.addEventListener('click', function() {
+    var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     html.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
   });
 
-  // ---- Mobile Menu ----
-  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-  const mainNav = document.getElementById('mainNav');
-
-  mobileMenuBtn.addEventListener('click', function() {
-    mainNav.classList.toggle('is-open');
+  // Mobile menu
+  var menuBtn = document.getElementById('mobileMenuBtn');
+  var nav = document.getElementById('mainNav');
+  menuBtn.addEventListener('click', function() {
+    nav.classList.toggle('is-open');
   });
-
-  // Close mobile menu when a nav link is clicked
-  mainNav.querySelectorAll('.header__nav-link').forEach(function(link) {
+  nav.querySelectorAll('.header__nav-link').forEach(function(link) {
     link.addEventListener('click', function() {
-      mainNav.classList.remove('is-open');
+      nav.classList.remove('is-open');
     });
   });
 
-  // ---- FAQ Accordion ----
+  // FAQ accordion
   document.querySelectorAll('.faq-question').forEach(function(btn) {
     btn.addEventListener('click', function() {
-      const item = this.closest('.faq-item');
-      const answer = item.querySelector('.faq-answer');
-      const isActive = item.classList.contains('active');
+      var item = this.closest('.faq-item');
+      var answer = item.querySelector('.faq-answer');
+      var isActive = item.classList.contains('active');
 
       // Close all
-      document.querySelectorAll('.faq-item.active').forEach(function(openItem) {
-        openItem.classList.remove('active');
-        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        openItem.querySelector('.faq-answer').style.maxHeight = '0';
+      document.querySelectorAll('.faq-item.active').forEach(function(open) {
+        open.classList.remove('active');
+        open.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        open.querySelector('.faq-answer').style.maxHeight = '0';
       });
 
       // Open clicked (if it wasn't already open)
@@ -1187,10 +1388,10 @@ section {
     });
   });
 
-  // ---- Smooth scroll for anchor links ----
-  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-    anchor.addEventListener('click', function(e) {
-      const target = document.querySelector(this.getAttribute('href'));
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var target = document.querySelector(this.getAttribute('href'));
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth' });
@@ -1198,8 +1399,27 @@ section {
     });
   });
 
+  // Fade-in on scroll
+  var fadeEls = document.querySelectorAll('.fade-in');
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    fadeEls.forEach(function(el) {
+      observer.observe(el);
+    });
+  } else {
+    fadeEls.forEach(function(el) {
+      el.classList.add('is-visible');
+    });
+  }
 })();
 </script>
-
 </body>
 </html>
