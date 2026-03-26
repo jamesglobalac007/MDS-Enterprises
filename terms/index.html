@@ -239,234 +239,6 @@
       color: var(--text-faint);
     }
 
-    /* ========== SIGNATURE SECTION ========== */
-    .signature-section {
-      margin-top: 3rem;
-      border: 1px solid var(--teal);
-      border-radius: var(--radius);
-      padding: 2rem;
-      background: var(--surface);
-      position: relative;
-    }
-    .signature-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--teal);
-      border-radius: var(--radius) var(--radius) 0 0;
-    }
-    .signature-section__heading {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: 1.5rem;
-      color: var(--text);
-      margin-bottom: 0.5rem;
-    }
-    .signature-section__subheading {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-      margin-bottom: 2rem;
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-    .form-row--full {
-      grid-template-columns: 1fr;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-    }
-    .form-group label {
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-faint);
-      margin-bottom: 0.375rem;
-    }
-    .form-group input {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 0.625rem 0.875rem;
-      font-size: 0.9375rem;
-      color: var(--text);
-      transition: border-color var(--transition);
-    }
-    .form-group input:focus {
-      outline: none;
-      border-color: var(--teal);
-    }
-    .form-group input[readonly] {
-      color: var(--text-muted);
-      cursor: default;
-    }
-
-    .signature-canvas-wrapper {
-      margin-top: 0.25rem;
-      margin-bottom: 1.5rem;
-    }
-    .signature-canvas-wrapper label {
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-faint);
-      margin-bottom: 0.375rem;
-      display: block;
-    }
-    .signature-canvas-container {
-      position: relative;
-      background: #fff;
-      border-radius: var(--radius);
-      overflow: hidden;
-      border: 1px solid var(--border);
-    }
-    .signature-canvas-container canvas {
-      display: block;
-      width: 100%;
-      height: 150px;
-      cursor: crosshair;
-    }
-    .signature-canvas-placeholder {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 0.875rem;
-      color: #b0b0b0;
-      pointer-events: none;
-      transition: opacity 200ms;
-    }
-    .signature-canvas-container.has-signature .signature-canvas-placeholder {
-      opacity: 0;
-    }
-    .signature-clear-btn {
-      margin-top: 0.5rem;
-      font-size: 0.8125rem;
-      font-weight: 500;
-      color: var(--text-muted);
-      padding: 0.25rem 0;
-      transition: color var(--transition);
-    }
-    .signature-clear-btn:hover {
-      color: var(--text);
-    }
-
-    .checkbox-group {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
-      cursor: pointer;
-    }
-    .checkbox-group input[type="checkbox"] {
-      flex-shrink: 0;
-      width: 1.125rem;
-      height: 1.125rem;
-      margin-top: 0.2rem;
-      accent-color: var(--teal);
-      cursor: pointer;
-    }
-    .checkbox-group span {
-      font-size: 0.875rem;
-      line-height: 1.6;
-      color: var(--text-muted);
-    }
-    .checkbox-group span strong {
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    .submit-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.75rem 2rem;
-      font-size: 0.9375rem;
-      font-weight: 500;
-      color: #fff;
-      background: var(--teal);
-      border: none;
-      border-radius: var(--radius);
-      cursor: pointer;
-      transition: background var(--transition), transform var(--transition);
-      width: 100%;
-    }
-    .submit-btn:hover {
-      background: var(--teal-hover);
-    }
-    .submit-btn:active {
-      transform: scale(0.98);
-    }
-    .submit-btn:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-    .submit-btn:disabled:hover {
-      background: var(--teal);
-    }
-
-    .form-error {
-      background: rgba(161,44,123,0.1);
-      border: 1px solid rgba(161,44,123,0.3);
-      border-radius: var(--radius);
-      padding: 0.75rem 1rem;
-      font-size: 0.875rem;
-      color: #d163a7;
-      margin-bottom: 1rem;
-      display: none;
-    }
-    .form-error.is-visible {
-      display: block;
-    }
-
-    .success-message {
-      text-align: center;
-      padding: 2rem;
-      display: none;
-    }
-    .success-message.is-visible {
-      display: block;
-    }
-    .success-message__icon {
-      width: 3.5rem;
-      height: 3.5rem;
-      border-radius: 50%;
-      background: var(--teal-muted);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1rem;
-    }
-    .success-message__icon svg {
-      width: 1.5rem;
-      height: 1.5rem;
-      color: #4f98a3;
-    }
-    .success-message__title {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: 1.25rem;
-      color: var(--text);
-      margin-bottom: 0.5rem;
-    }
-    .success-message__text {
-      font-size: 0.9375rem;
-      color: var(--text-muted);
-      max-width: 400px;
-      margin: 0 auto;
-    }
 
     /* ========== FOOTER ========== */
     .page-footer {
@@ -570,37 +342,6 @@
       .disclosure__title { color: #222; }
       .disclosure__summary { color: #444; }
       .disclosure__body { color: #444; }
-      .signature-section {
-        border-color: #222;
-        background: #fff;
-      }
-      .signature-section::before {
-        background: #222;
-      }
-      .signature-section__heading { color: #222; }
-      .signature-canvas-wrapper {
-        display: none;
-      }
-      .print-signed-note {
-        display: block !important;
-        font-style: italic;
-        color: #666;
-        margin: 1rem 0;
-      }
-      .signature-clear-btn,
-      .submit-btn,
-      .checkbox-group {
-        display: none !important;
-      }
-      .form-group input {
-        border: none;
-        border-bottom: 1px solid #ccc;
-        border-radius: 0;
-        padding-left: 0;
-        background: transparent;
-        color: #222;
-      }
-      .form-group label { color: #666; }
       .page-footer {
         border-top-color: #ccc;
       }
@@ -612,8 +353,6 @@
       .page-footer__contact a { color: #444; }
     }
 
-    /* Print-only signed note hidden on screen */
-    .print-signed-note { display: none; }
   </style>
 </head>
 <body>
@@ -1210,74 +949,6 @@
       </div>
     </article>
 
-    <!-- SIGNATURE SECTION -->
-    <section class="signature-section" id="signatureSection">
-      <h2 class="signature-section__heading">Digital Signature</h2>
-      <p class="signature-section__subheading">Please complete the fields below and provide your signature to accept these terms.</p>
-
-      <div id="formError" class="form-error"></div>
-
-      <form id="agreementForm" action="https://formsubmit.co/c0d3ebccf239700f13cfdca36d05749f" method="POST">
-        <!-- FormSubmit config -->
-        <input type="hidden" name="_subject" id="hiddenSubject" value="MDS Agreement Signed">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" id="hiddenNext" value="">
-        <input type="hidden" name="signature_data" id="hiddenSignature" value="">
-        <input type="hidden" name="project" id="hiddenProject" value="">
-        <input type="hidden" name="agreed_terms" value="All 21 disclosure sections accepted">
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="sigName">Client Name</label>
-            <input type="text" id="sigName" name="client_name" placeholder="Full name" required>
-          </div>
-          <div class="form-group">
-            <label for="sigCompany">Company</label>
-            <input type="text" id="sigCompany" name="company" placeholder="Company name" required>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="sigEmail">Email</label>
-            <input type="email" id="sigEmail" name="email" placeholder="Email address" required>
-          </div>
-          <div class="form-group">
-            <label for="sigDate">Date</label>
-            <input type="text" id="sigDate" name="date_signed" readonly>
-          </div>
-        </div>
-
-        <div class="signature-canvas-wrapper">
-          <label>Signature</label>
-          <div class="signature-canvas-container" id="canvasContainer">
-            <canvas id="signatureCanvas"></canvas>
-            <span class="signature-canvas-placeholder">Draw your signature here</span>
-          </div>
-          <button type="button" class="signature-clear-btn" onclick="clearSignature()">Clear signature</button>
-          <p class="print-signed-note">Signed digitally</p>
-        </div>
-
-        <label class="checkbox-group">
-          <input type="checkbox" id="agreeCheck" required>
-          <span>I, <strong id="checkboxNameInsert">the undersigned</strong>, confirm that I have read this document in full, agree to the project proposal and payment terms as outlined, and accept all terms and conditions set out above.</span>
-        </label>
-
-        <button type="submit" class="submit-btn" id="submitBtn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          Sign & Accept
-        </button>
-      </form>
-
-      <div class="success-message" id="successMessage">
-        <div class="success-message__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        </div>
-        <h3 class="success-message__title">Agreement signed successfully</h3>
-        <p class="success-message__text">A copy has been sent to MDS Enterprises. Thank you.</p>
-      </div>
-    </section>
 
     <!-- FOOTER -->
     <footer class="page-footer">
@@ -1291,13 +962,12 @@
   </div>
 
   <script>
-    // ========== URL PARAMS ==========
+    // ========== URL PARAMS (display only) ==========
     (function() {
       const params = new URLSearchParams(window.location.search);
       const name = params.get('name');
       const company = params.get('company');
       const project = params.get('project');
-      const email = params.get('email');
 
       if (name || company) {
         const displayParts = [];
@@ -1308,17 +978,6 @@
       if (project) {
         document.getElementById('clientProjectDisplay').textContent = project;
       }
-      if (name) document.getElementById('sigName').value = name;
-      if (company) document.getElementById('sigCompany').value = company;
-      if (email) document.getElementById('sigEmail').value = email;
-      if (project) document.getElementById('hiddenProject').value = project;
-    })();
-
-    // ========== DATE ==========
-    (function() {
-      const now = new Date();
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      document.getElementById('sigDate').value = now.toLocaleDateString('en-AU', options);
     })();
 
     // ========== DISCLOSURE TOGGLE ==========
@@ -1330,156 +989,6 @@
       btn.setAttribute('aria-expanded', !isOpen);
       const label = el.querySelector('.disclosure__expand-label');
       label.textContent = isOpen ? 'Read full terms' : 'Hide full terms';
-    }
-
-    // ========== SIGNATURE CANVAS ==========
-    const canvas = document.getElementById('signatureCanvas');
-    const ctx = canvas.getContext('2d');
-    const container = document.getElementById('canvasContainer');
-    let isDrawing = false;
-    let hasSigned = false;
-
-    function resizeCanvas() {
-      const rect = canvas.parentElement.getBoundingClientRect();
-      const dpr = window.devicePixelRatio || 1;
-      canvas.width = rect.width * dpr;
-      canvas.height = 150 * dpr;
-      canvas.style.height = '150px';
-      ctx.scale(dpr, dpr);
-      ctx.lineWidth = 2;
-      ctx.lineCap = 'round';
-      ctx.lineJoin = 'round';
-      ctx.strokeStyle = '#222';
-    }
-    resizeCanvas();
-    window.addEventListener('resize', function() {
-      if (!hasSigned) resizeCanvas();
-    });
-
-    function getPos(e) {
-      const rect = canvas.getBoundingClientRect();
-      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-      return { x: clientX - rect.left, y: clientY - rect.top };
-    }
-
-    function startDraw(e) {
-      e.preventDefault();
-      isDrawing = true;
-      const pos = getPos(e);
-      ctx.beginPath();
-      ctx.moveTo(pos.x, pos.y);
-    }
-    function draw(e) {
-      if (!isDrawing) return;
-      e.preventDefault();
-      const pos = getPos(e);
-      ctx.lineTo(pos.x, pos.y);
-      ctx.stroke();
-      if (!hasSigned) {
-        hasSigned = true;
-        container.classList.add('has-signature');
-      }
-    }
-    function stopDraw(e) {
-      if (isDrawing) {
-        isDrawing = false;
-        ctx.closePath();
-      }
-    }
-
-    canvas.addEventListener('mousedown', startDraw);
-    canvas.addEventListener('mousemove', draw);
-    canvas.addEventListener('mouseup', stopDraw);
-    canvas.addEventListener('mouseleave', stopDraw);
-    canvas.addEventListener('touchstart', startDraw, { passive: false });
-    canvas.addEventListener('touchmove', draw, { passive: false });
-    canvas.addEventListener('touchend', stopDraw);
-    canvas.addEventListener('touchcancel', stopDraw);
-
-    function clearSignature() {
-      const dpr = window.devicePixelRatio || 1;
-      ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
-      hasSigned = false;
-      container.classList.remove('has-signature');
-    }
-
-    // ========== CHECKBOX NAME SYNC ==========
-    const sigNameInput = document.getElementById('sigName');
-    const checkboxNameInsert = document.getElementById('checkboxNameInsert');
-    sigNameInput.addEventListener('input', function() {
-      checkboxNameInsert.textContent = this.value.trim() || 'the undersigned';
-    });
-    // Init if prefilled
-    if (sigNameInput.value) {
-      checkboxNameInsert.textContent = sigNameInput.value;
-    }
-
-    // ========== FORM SUBMIT ==========
-    const form = document.getElementById('agreementForm');
-    const formError = document.getElementById('formError');
-    const submitBtn = document.getElementById('submitBtn');
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      formError.classList.remove('is-visible');
-
-      // Validate
-      const name = sigNameInput.value.trim();
-      const company = document.getElementById('sigCompany').value.trim();
-      const email = document.getElementById('sigEmail').value.trim();
-      const agreed = document.getElementById('agreeCheck').checked;
-
-      const errors = [];
-      if (!name) errors.push('Please enter your name.');
-      if (!company) errors.push('Please enter your company name.');
-      if (!email) errors.push('Please enter your email address.');
-      if (!hasSigned) errors.push('Please draw your signature.');
-      if (!agreed) errors.push('Please confirm you have read and agree to the terms.');
-
-      if (errors.length) {
-        formError.innerHTML = errors.join('<br>');
-        formError.classList.add('is-visible');
-        formError.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        return;
-      }
-
-      // Prepare data
-      document.getElementById('hiddenSubject').value = 'MDS Agreement Signed — ' + company;
-      document.getElementById('hiddenSignature').value = canvas.toDataURL('image/png');
-
-      // Set _next to current page to avoid redirect issues
-      document.getElementById('hiddenNext').value = window.location.href;
-
-      // Disable button
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="10"><animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/></circle></svg> Submitting…';
-
-      // Submit via fetch
-      const formData = new FormData(form);
-
-      fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      })
-      .then(function(response) {
-        if (response.ok) {
-          showSuccess();
-        } else {
-          // Fallback: try regular form submit
-          form.submit();
-        }
-      })
-      .catch(function() {
-        // Fallback: try regular form submit
-        form.submit();
-      });
-    });
-
-    function showSuccess() {
-      form.style.display = 'none';
-      document.getElementById('successMessage').classList.add('is-visible');
     }
   </script>
 
