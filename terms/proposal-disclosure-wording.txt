@@ -1,0 +1,54 @@
+PROPOSAL DISCLOSURE WORDING
+============================
+Add this to the proposal template (e.g. at the end before signature, 
+or as a dedicated "Disclosures" section):
+
+
+OPTION A — Short version (for proposal body):
+----------------------------------------------
+All engagements with MDS Enterprises are subject to our Engagement Terms 
+& Disclosures, which cover privacy, liability, data security, intellectual 
+property, AI tools, deliverable handover, and all other terms governing 
+this engagement. A link to the full terms is provided below and is also 
+permanently accessible within your live portal/platform footer.
+
+Full Terms: https://jamesglobalac007.github.io/MDS-Enterprises/terms/
+
+
+OPTION B — Detailed version (for a dedicated section):
+------------------------------------------------------
+ENGAGEMENT TERMS & DISCLOSURES
+
+This proposal is subject to the MDS Enterprises Engagement Terms & 
+Disclosures, which include but are not limited to:
+
+  - Privacy & data collection practices
+  - Consent to data access
+  - Limitation of liability & indemnity
+  - Insurance & professional standards
+  - Intellectual property ownership
+  - Payment & cancellation terms
+  - Dispute resolution
+  - Data security & monitoring (client responsibility)
+  - Results disclaimer (no guaranteed outcomes)
+  - Scope of work & change orders
+  - Confidentiality
+  - Client data accuracy & verification
+  - Nature of services & exclusions
+  - Third-party tools & software
+  - AI tools & automation
+  - Website, portal & deliverable handover
+  - Training & implementation
+  - Non-solicitation
+  - Acceptance & sign-off
+  - Client cooperation & communication
+  - Entire agreement
+
+Full terms are available at:
+https://jamesglobalac007.github.io/MDS-Enterprises/terms/
+
+A permanent disclosure link is also embedded in the footer of your 
+live portal/platform for ongoing access.
+
+By signing this proposal, you confirm that you have read, understood, 
+and agree to all terms and disclosures outlined at the link above.

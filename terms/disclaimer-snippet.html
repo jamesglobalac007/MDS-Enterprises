@@ -1,0 +1,82 @@
+<!--
+  MDS ENTERPRISES — DISCLAIMER FOOTER SNIPPET
+  =============================================
+  Drop this into the footer of every client portal, app, or platform.
+  
+  HOW TO USE:
+  1. Copy the <style> block into your project's CSS (or <head>)
+  2. Copy the <footer> block just before </body>
+  3. Update the URL parameters for each client:
+     - name    = Client contact name
+     - company = Client company name
+     - project = Project name
+     - email   = Client email
+  
+  The link points to your master Terms & Disclosures page on GitHub Pages.
+  Client details auto-populate when they open it.
+-->
+
+<!-- ====== PASTE THIS CSS INTO YOUR PROJECT'S <style> OR CSS FILE ====== -->
+<style>
+.mds-disclaimer-footer {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.6;
+}
+
+/* For light-themed portals, use this instead: */
+.mds-disclaimer-footer--light {
+  border-top-color: rgba(0,0,0,0.08);
+  color: rgba(0,0,0,0.35);
+}
+
+.mds-disclaimer-footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.mds-disclaimer-footer a:hover {
+  color: rgba(255,255,255,0.6);
+}
+
+.mds-disclaimer-footer--light a:hover {
+  color: rgba(0,0,0,0.6);
+}
+</style>
+
+
+<!-- ====== PASTE THIS FOOTER BEFORE </body> ====== -->
+<!-- UPDATE the URL parameters for each client project -->
+<footer class="mds-disclaimer-footer">
+  Built by MDS Enterprises &nbsp;|&nbsp; 
+  <a href="https://jamesglobalac007.github.io/MDS-Enterprises/terms/?name=CLIENT_NAME&company=COMPANY_NAME&project=PROJECT_NAME&email=CLIENT_EMAIL" target="_blank" rel="noopener">
+    Terms & Disclosures
+  </a>
+  &nbsp;|&nbsp; &copy; 2026 Money Doesn't Sleep Enterprises Pty Ltd
+</footer>
+
+
+<!--
+  EXAMPLE WITH REAL CLIENT DATA:
+  
+  <footer class="mds-disclaimer-footer">
+    Built by MDS Enterprises &nbsp;|&nbsp; 
+    <a href="https://jamesglobalac007.github.io/MDS-Enterprises/terms/?name=John+Smith&company=Radius+Property+Group&project=Database+Reactivation&email=john@radius.com.au" target="_blank" rel="noopener">
+      Terms & Disclosures
+    </a>
+    &nbsp;|&nbsp; &copy; 2026 Money Doesn't Sleep Enterprises Pty Ltd
+  </footer>
+
+  FOR LIGHT-THEMED PORTALS:
+  Add class "mds-disclaimer-footer--light" alongside "mds-disclaimer-footer"
+  
+  <footer class="mds-disclaimer-footer mds-disclaimer-footer--light">
+    ...
+  </footer>
+-->
