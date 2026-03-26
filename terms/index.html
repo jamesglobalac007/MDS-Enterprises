@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDS Enterprises — Engagement Terms & Disclosures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    /* ========== RESET & BASE ========== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      scroll-behavior: smooth;
+    }
+    body {
+      min-height: 100dvh;
+      font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #CDCCCA;
+      background-color: #171614;
+    }
+    img, picture, video, canvas, svg { display: block; max-width: 100%; }
+    input, button, textarea, select { font: inherit; color: inherit; }
+    h1, h2, h3, h4, h5, h6 { line-height: 1.2; }
+    p, li, figcaption { max-width: 72ch; }
+    a { color: #01696F; text-decoration: none; }
+    a:hover { color: #4f98a3; }
+    ::selection { background: rgba(1,105,111,0.3); color: #CDCCCA; }
+    :focus-visible { outline: 2px solid #01696F; outline-offset: 3px; border-radius: 4px; }
+    button { cursor: pointer; background: none; border: none; }
+
+    /* ========== VARIABLES ========== */
+    :root {
+      --bg: #171614;
+      --surface: #1c1b19;
+      --surface-2: #222120;
+      --border: #2e2d2b;
+      --border-light: #3a3937;
+      --text: #CDCCCA;
+      --text-muted: #8a8987;
+      --text-faint: #5a5957;
+      --teal: #01696F;
+      --teal-hover: #028a92;
+      --teal-muted: rgba(1,105,111,0.15);
+      --font-display: 'Instrument Serif', Georgia, serif;
+      --font-body: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+      --radius: 6px;
+      --transition: 200ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* ========== LAYOUT ========== */
+    .page-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem 4rem;
+    }
+
+    /* ========== HEADER ========== */
+    .page-header {
+      text-align: center;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    .page-header__brand {
+      font-family: var(--font-body);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.25rem;
+    }
+    .page-header__locations {
+      font-family: var(--font-body);
+      font-size: 0.6875rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 2rem;
+    }
+    .page-header__title {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(1.75rem, 1.2rem + 2.5vw, 2.75rem);
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    /* ========== CLIENT DETAILS ========== */
+    .client-details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .client-details__label {
+      font-size: 0.6875rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 0.75rem;
+    }
+    .client-details__name {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+    .client-details__project {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+    }
+    .client-details__project strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ========== DISCLOSURE SECTIONS ========== */
+    .disclosures-heading {
+      font-family: var(--font-body);
+      font-size: 0.6875rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 1rem;
+    }
+
+    .disclosure {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 0.75rem;
+      background: var(--surface);
+      transition: border-color var(--transition);
+    }
+    .disclosure:hover {
+      border-color: var(--border-light);
+    }
+    .disclosure__header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      color: var(--text);
+      user-select: none;
+    }
+    .disclosure__number {
+      flex-shrink: 0;
+      width: 1.75rem;
+      height: 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 50%;
+      background: var(--teal-muted);
+      color: #4f98a3;
+      margin-top: 0.125rem;
+    }
+    .disclosure__content {
+      flex: 1;
+      min-width: 0;
+    }
+    .disclosure__title {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .disclosure__summary {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+    .disclosure__chevron {
+      flex-shrink: 0;
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-top: 0.25rem;
+      color: var(--text-faint);
+      transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1), color var(--transition);
+    }
+    .disclosure.is-open .disclosure__chevron {
+      transform: rotate(180deg);
+      color: var(--teal);
+    }
+    .disclosure__expand-label {
+      display: inline-block;
+      margin-top: 0.625rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: #4f98a3;
+    }
+    .disclosure__body-wrapper {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 400ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .disclosure.is-open .disclosure__body-wrapper {
+      max-height: 1200px;
+    }
+    .disclosure__body {
+      padding: 0 1.5rem 1.25rem 4.25rem;
+      font-size: 0.875rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+    .disclosure__body p {
+      margin-bottom: 0.5rem;
+    }
+    .disclosure__body ul {
+      list-style: none;
+      padding: 0;
+    }
+    .disclosure__body ul li {
+      position: relative;
+      padding-left: 1rem;
+      margin-bottom: 0.375rem;
+    }
+    .disclosure__body ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--text-faint);
+    }
+
+    /* ========== SIGNATURE SECTION ========== */
+    .signature-section {
+      margin-top: 3rem;
+      border: 1px solid var(--teal);
+      border-radius: var(--radius);
+      padding: 2rem;
+      background: var(--surface);
+      position: relative;
+    }
+    .signature-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--teal);
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+    .signature-section__heading {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.5rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .signature-section__subheading {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .form-row--full {
+      grid-template-columns: 1fr;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 0.375rem;
+    }
+    .form-group input {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.625rem 0.875rem;
+      font-size: 0.9375rem;
+      color: var(--text);
+      transition: border-color var(--transition);
+    }
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--teal);
+    }
+    .form-group input[readonly] {
+      color: var(--text-muted);
+      cursor: default;
+    }
+
+    .signature-canvas-wrapper {
+      margin-top: 0.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .signature-canvas-wrapper label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 0.375rem;
+      display: block;
+    }
+    .signature-canvas-container {
+      position: relative;
+      background: #fff;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .signature-canvas-container canvas {
+      display: block;
+      width: 100%;
+      height: 150px;
+      cursor: crosshair;
+    }
+    .signature-canvas-placeholder {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 0.875rem;
+      color: #b0b0b0;
+      pointer-events: none;
+      transition: opacity 200ms;
+    }
+    .signature-canvas-container.has-signature .signature-canvas-placeholder {
+      opacity: 0;
+    }
+    .signature-clear-btn {
+      margin-top: 0.5rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      padding: 0.25rem 0;
+      transition: color var(--transition);
+    }
+    .signature-clear-btn:hover {
+      color: var(--text);
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      cursor: pointer;
+    }
+    .checkbox-group input[type="checkbox"] {
+      flex-shrink: 0;
+      width: 1.125rem;
+      height: 1.125rem;
+      margin-top: 0.2rem;
+      accent-color: var(--teal);
+      cursor: pointer;
+    }
+    .checkbox-group span {
+      font-size: 0.875rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+    .checkbox-group span strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .submit-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 2rem;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #fff;
+      background: var(--teal);
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition);
+      width: 100%;
+    }
+    .submit-btn:hover {
+      background: var(--teal-hover);
+    }
+    .submit-btn:active {
+      transform: scale(0.98);
+    }
+    .submit-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .submit-btn:disabled:hover {
+      background: var(--teal);
+    }
+
+    .form-error {
+      background: rgba(161,44,123,0.1);
+      border: 1px solid rgba(161,44,123,0.3);
+      border-radius: var(--radius);
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+      color: #d163a7;
+      margin-bottom: 1rem;
+      display: none;
+    }
+    .form-error.is-visible {
+      display: block;
+    }
+
+    .success-message {
+      text-align: center;
+      padding: 2rem;
+      display: none;
+    }
+    .success-message.is-visible {
+      display: block;
+    }
+    .success-message__icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      background: var(--teal-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .success-message__icon svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: #4f98a3;
+    }
+    .success-message__title {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .success-message__text {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    /* ========== FOOTER ========== */
+    .page-footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+    .page-footer__company {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      margin-bottom: 0.375rem;
+    }
+    .page-footer__contact {
+      font-size: 0.8125rem;
+      color: var(--text-faint);
+      margin-bottom: 0.25rem;
+    }
+    .page-footer__contact a {
+      color: var(--text-faint);
+      transition: color var(--transition);
+    }
+    .page-footer__contact a:hover {
+      color: var(--text);
+    }
+    .page-footer__locations {
+      font-size: 0.6875rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-top: 0.5rem;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 600px) {
+      .page-wrapper {
+        padding: 2rem 1.25rem 3rem;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .disclosure__header {
+        padding: 1rem 1.25rem;
+        gap: 0.75rem;
+      }
+      .disclosure__body {
+        padding: 0 1.25rem 1rem 3.5rem;
+      }
+      .signature-section {
+        padding: 1.5rem 1.25rem;
+      }
+      .client-details {
+        padding: 1.25rem 1.5rem;
+      }
+    }
+
+    /* ========== PRINT ========== */
+    @media print {
+      body {
+        background: #fff;
+        color: #222;
+        font-size: 11pt;
+      }
+      .page-wrapper {
+        max-width: 100%;
+        padding: 0;
+      }
+      .page-header {
+        border-bottom-color: #ccc;
+      }
+      .page-header__brand,
+      .page-header__locations,
+      .page-header__title {
+        color: #222;
+      }
+      .client-details {
+        background: #f5f5f5;
+        border-color: #ccc;
+      }
+      .client-details__label { color: #666; }
+      .client-details__name { color: #222; }
+      .client-details__project { color: #444; }
+      .client-details__project strong { color: #222; }
+      .disclosure {
+        border-color: #ccc;
+        background: #fff;
+        break-inside: avoid;
+      }
+      .disclosure__body-wrapper {
+        max-height: none !important;
+        overflow: visible !important;
+      }
+      .disclosure__chevron,
+      .disclosure__expand-label {
+        display: none !important;
+      }
+      .disclosure__number {
+        background: #eee;
+        color: #333;
+      }
+      .disclosure__title { color: #222; }
+      .disclosure__summary { color: #444; }
+      .disclosure__body { color: #444; }
+      .signature-section {
+        border-color: #222;
+        background: #fff;
+      }
+      .signature-section::before {
+        background: #222;
+      }
+      .signature-section__heading { color: #222; }
+      .signature-canvas-wrapper {
+        display: none;
+      }
+      .print-signed-note {
+        display: block !important;
+        font-style: italic;
+        color: #666;
+        margin: 1rem 0;
+      }
+      .signature-clear-btn,
+      .submit-btn,
+      .checkbox-group {
+        display: none !important;
+      }
+      .form-group input {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+        padding-left: 0;
+        background: transparent;
+        color: #222;
+      }
+      .form-group label { color: #666; }
+      .page-footer {
+        border-top-color: #ccc;
+      }
+      .page-footer__company,
+      .page-footer__contact,
+      .page-footer__locations {
+        color: #444;
+      }
+      .page-footer__contact a { color: #444; }
+    }
+
+    /* Print-only signed note hidden on screen */
+    .print-signed-note { display: none; }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- HEADER -->
+    <header class="page-header">
+      <div class="page-header__brand">MDS Enterprises</div>
+      <div class="page-header__locations">SYD · VIC · QLD</div>
+      <h1 class="page-header__title">Engagement Terms & Disclosures</h1>
+    </header>
+
+    <!-- CLIENT DETAILS -->
+    <section class="client-details" id="clientDetails">
+      <div class="client-details__label">Prepared For</div>
+      <div class="client-details__name" id="clientNameDisplay">[Client Name], [Company]</div>
+      <div class="client-details__project">Project: <strong id="clientProjectDisplay">[Project]</strong></div>
+    </section>
+
+    <!-- DISCLOSURES -->
+    <div class="disclosures-heading">Terms & Disclosures</div>
+
+    <!-- 1. Privacy & Data Collection -->
+    <article class="disclosure" id="disclosure-1">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(1)">
+        <span class="disclosure__number">1</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Privacy & Data Collection</h2>
+          <p class="disclosure__summary">We collect only the data necessary to deliver your project. Your information is handled in accordance with the Australian Privacy Act 1988 and the Australian Privacy Principles (APPs).</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <p><strong>Data collected:</strong></p>
+          <ul>
+            <li>Business contact details</li>
+            <li>CRM/database access credentials</li>
+            <li>Customer data shared for revitalisation</li>
+            <li>Website analytics</li>
+            <li>Communication records</li>
+          </ul>
+          <p><strong>Storage:</strong> All data is encrypted and stored on Australian-based servers where possible. Access is limited to James Okkerse and authorised MDS team members.</p>
+          <p><strong>Retention:</strong> Data is kept for the duration of the engagement plus 12 months, then securely deleted unless otherwise agreed.</p>
+          <p><strong>Third-party tools:</strong> MDS may use tools such as CRMs, email platforms, and analytics services — all subject to their own privacy policies, listed where applicable.</p>
+          <p>You may request access to or deletion of your data at any time by emailing <a href="mailto:james@mdsenterprises.com.au">james@mdsenterprises.com.au</a>.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Consent to Data Access -->
+    <article class="disclosure" id="disclosure-2">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(2)">
+        <span class="disclosure__number">2</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Consent to Data Access</h2>
+          <p class="disclosure__summary">By signing this agreement, you consent to MDS Enterprises accessing the business data and systems outlined in your project proposal for the sole purpose of delivering the agreed scope of work.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <ul>
+            <li>Access is limited to systems and data explicitly agreed in the project scope.</li>
+            <li>MDS will not access, copy, or retain data outside the agreed scope.</li>
+            <li>Screen-sharing sessions are not recorded unless explicitly agreed.</li>
+            <li>Any login credentials provided are used solely for project delivery and stored securely.</li>
+            <li>You may revoke access at any time in writing, understanding this may impact project delivery.</li>
+            <li>MDS will not share client data with any third party without prior written consent, except where required by law.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Limitation of Liability & Indemnity -->
+    <article class="disclosure" id="disclosure-3">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(3)">
+        <span class="disclosure__number">3</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Limitation of Liability & Indemnity</h2>
+          <p class="disclosure__summary">MDS Enterprises takes every reasonable precaution, but cannot be held liable for indirect losses, data breaches caused by third-party platforms, or pre-existing issues within your systems. You agree to indemnify MDS Enterprises against claims arising from data or systems you provide.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <p>MDS Enterprises (Money Doesn't Sleep Enterprises Pty Ltd) liability is limited to the total fees paid under this engagement.</p>
+          <p><strong>MDS is not liable for:</strong></p>
+          <ul>
+            <li>Indirect, consequential, or incidental losses</li>
+            <li>Lost revenue, profits, or data arising from the engagement</li>
+            <li>Breaches or failures of third-party platforms, tools, or services used in delivery</li>
+            <li>Pre-existing vulnerabilities, data quality issues, or system failures in client environments</li>
+            <li>Actions taken by client staff using systems or playbooks delivered by MDS</li>
+          </ul>
+          <p><strong>Client indemnifies MDS against all claims, losses, damages, and expenses (including legal fees) arising from:</strong></p>
+          <ul>
+            <li>Data provided by the client being inaccurate, incomplete, or obtained without proper consent</li>
+            <li>Client's use or misuse of deliverables, systems, or recommendations provided by MDS</li>
+            <li>Any breach of this agreement by the client</li>
+          </ul>
+          <p><strong>Force majeure:</strong> Neither party is liable for delays or failures caused by events beyond reasonable control.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. Insurance & Professional Standards -->
+    <article class="disclosure" id="disclosure-4">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(4)">
+        <span class="disclosure__number">4</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Insurance & Professional Standards</h2>
+          <p class="disclosure__summary">MDS Enterprises maintains appropriate professional indemnity and public liability coverage. We operate to high professional standards and adhere to Australian consumer law obligations.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <ul>
+            <li>MDS maintains professional indemnity insurance covering the services provided.</li>
+            <li>Public liability insurance is maintained for on-site and in-person engagements.</li>
+            <li>MDS operates in compliance with the Australian Consumer Law (ACL) and relevant state/territory fair trading legislation.</li>
+            <li>All services are provided with due care and skill as required under the ACL.</li>
+            <li>MDS reserves the right to subcontract specific technical tasks, with the same privacy and confidentiality obligations applying to any subcontractor.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. Intellectual Property -->
+    <article class="disclosure" id="disclosure-5">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(5)">
+        <span class="disclosure__number">5</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Intellectual Property</h2>
+          <p class="disclosure__summary">Upon full payment, all custom deliverables built for your project become your property. MDS retains the right to use general methodologies, frameworks, and non-client-specific tools developed during the engagement.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <ul>
+            <li>Client owns all custom-built deliverables (dashboards, automations, websites, playbooks) upon full payment of all invoices.</li>
+            <li>MDS retains ownership of pre-existing IP, methodologies, templates, and general frameworks used across multiple clients.</li>
+            <li>MDS may use anonymised, non-identifiable case study data for marketing purposes only with prior written client consent.</li>
+            <li>Open-source or third-party tools/libraries used in delivery remain subject to their respective licences.</li>
+            <li>Work-in-progress deliverables remain MDS property until final payment is received.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- 6. Payment & Cancellation -->
+    <article class="disclosure" id="disclosure-6">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(6)">
+        <span class="disclosure__number">6</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Payment & Cancellation</h2>
+          <p class="disclosure__summary">Payment terms are as outlined in your project proposal. Cancellation terms include notice periods and any applicable fees for work already completed.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <ul>
+            <li>Payment is due per the schedule in the accompanying project proposal.</li>
+            <li>Late payments incur interest at 2% per month on outstanding amounts.</li>
+            <li>MDS reserves the right to pause work if payments are more than 14 days overdue.</li>
+            <li><strong>Cancellation by client:</strong> Written notice required per the notice period in the proposal. Client is liable for all work completed up to the cancellation date plus any committed third-party costs.</li>
+            <li><strong>Cancellation by MDS:</strong> 14 days written notice, with all completed work and deliverables transferred to the client.</li>
+            <li><strong>Refunds:</strong> Deposits are non-refundable. Fees for incomplete milestones are charged pro-rata based on work completed.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- 7. Dispute Resolution -->
+    <article class="disclosure" id="disclosure-7">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(7)">
+        <span class="disclosure__number">7</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Dispute Resolution</h2>
+          <p class="disclosure__summary">In the event of a disagreement, both parties agree to attempt resolution through good-faith negotiation before pursuing formal proceedings. This agreement is governed by the laws of New South Wales, Australia.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <ul>
+            <li>Parties agree to first attempt to resolve disputes through informal negotiation within 14 days of written notice.</li>
+            <li>If unresolved, parties agree to participate in mediation administered by a mutually agreed mediator before commencing legal proceedings.</li>
+            <li>Costs of mediation are shared equally.</li>
+            <li>This agreement is governed by the laws of New South Wales, Australia.</li>
+            <li>The parties submit to the non-exclusive jurisdiction of the courts of New South Wales.</li>
+            <li>Nothing in this agreement excludes or limits rights under the Australian Consumer Law that cannot be excluded by law.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- 8. Data Security & Monitoring -->
+    <article class="disclosure" id="disclosure-8">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(8)">
+        <span class="disclosure__number">8</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Data Security & Monitoring</h2>
+          <p class="disclosure__summary">MDS Enterprises does not provide cybersecurity, data monitoring, or IT security services. The security, protection, and monitoring of your business data, systems, and IT infrastructure remains your sole responsibility at all times.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <p><strong>MDS Enterprises expressly disclaims any responsibility for:</strong></p>
+          <ul>
+            <li>Monitoring, securing, or protecting client data, databases, CRM systems, or IT infrastructure</li>
+            <li>Cybersecurity threats, data breaches, hacking, malware, or unauthorised access to client systems</li>
+            <li>Data loss, corruption, or leakage occurring within or from client-controlled systems</li>
+            <li>Backup, disaster recovery, or business continuity of client data</li>
+            <li>Compliance with data protection laws relating to the client's own data handling practices</li>
+          </ul>
+          <p><strong>Client responsibilities:</strong></p>
+          <ul>
+            <li>Maintaining appropriate cybersecurity measures, firewalls, antivirus, and access controls</li>
+            <li>Regularly backing up all business data before, during, and after the engagement</li>
+            <li>Ensuring all data shared with MDS is properly backed up and that the client retains master copies</li>
+            <li>Monitoring their own systems for security incidents and unauthorised access</li>
+            <li>Complying with the Australian Privacy Act 1988 and any other applicable data protection legislation in relation to their own data practices</li>
+          </ul>
+          <p>MDS may access client systems and data solely as agreed in the project scope. Any data handled by MDS during the engagement is managed with reasonable care, but MDS is not a cybersecurity provider and makes no representations regarding the security of client-controlled environments.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 9. Results Disclaimer & No Guarantee of Outcomes -->
+    <article class="disclosure" id="disclosure-9">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(9)">
+        <span class="disclosure__number">9</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Results Disclaimer</h2>
+          <p class="disclosure__summary">MDS Enterprises provides strategic consulting, systems, and recommendations. However, results depend on many factors outside our control and we cannot guarantee specific revenue, growth, or business outcomes.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <ul>
+            <li>MDS does not guarantee any specific financial results, revenue increases, lead conversions, or business outcomes.</li>
+            <li>All projections, estimates, or examples provided are for illustrative purposes only and are not promises of future performance.</li>
+            <li>Results vary depending on factors including but not limited to: industry conditions, market timing, client effort and execution, existing data quality, staff capability, and external economic factors.</li>
+            <li>Any case studies, testimonials, or past results referenced are specific to those engagements and are not a guarantee that similar results will be achieved.</li>
+            <li>MDS provides services with due care and skill. The responsibility for implementing and executing recommendations rests with the client.</li>
+            <li>Nothing in this disclaimer limits rights under the Australian Consumer Law where services are not provided with due care and skill.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- 10. Scope of Work & Change Orders -->
+    <article class="disclosure" id="disclosure-10">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(10)">
+        <span class="disclosure__number">10</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Scope of Work & Change Orders</h2>
+          <p class="disclosure__summary">Work is delivered strictly within the scope defined in your project proposal. Any additional work, changes, or requests outside the agreed scope require a written change order and may incur additional fees.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <ul>
+            <li>The scope of work is defined exclusively by the accompanying project proposal document.</li>
+            <li>Any work not explicitly listed in the project scope is considered out of scope.</li>
+            <li>Requests for additional work, modifications, or scope changes must be submitted in writing and agreed upon by both parties before work commences.</li>
+            <li>Change orders may result in additional fees and/or adjusted timelines, which will be communicated in writing before proceeding.</li>
+            <li>MDS reserves the right to decline change requests that fall outside its areas of expertise.</li>
+            <li>Delays caused by the client (e.g. late provision of data, delayed approvals, or unavailability) may extend project timelines without liability to MDS.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- 11. Confidentiality -->
+    <article class="disclosure" id="disclosure-11">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(11)">
+        <span class="disclosure__number">11</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Confidentiality</h2>
+          <p class="disclosure__summary">Both parties agree to keep confidential all proprietary and sensitive information disclosed during the engagement. This obligation survives the termination of this agreement.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <ul>
+            <li>Confidential information includes business strategies, customer data, financial information, trade secrets, proprietary processes, and any information marked as confidential.</li>
+            <li>Neither party shall disclose, share, or use the other party's confidential information for any purpose other than fulfilling obligations under this engagement.</li>
+            <li>Confidentiality obligations do not apply to information that is publicly available, independently developed, or required to be disclosed by law.</li>
+            <li>MDS will not use client data, customer lists, or business information to compete with or solicit from the client's business.</li>
+            <li>Upon termination of the engagement, each party shall return or destroy all confidential information belonging to the other party, unless retention is required by law.</li>
+            <li>This confidentiality obligation survives termination of this agreement for a period of 24 months.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- 12. Client Data Accuracy & Verification -->
+    <article class="disclosure" id="disclosure-12">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(12)">
+        <span class="disclosure__number">12</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Client Data Accuracy & Verification</h2>
+          <p class="disclosure__summary">MDS Enterprises assists with strategy, design, and system building. Verifying, correcting, and ensuring the accuracy of your business data is solely your responsibility. We work with the data you provide as-is.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <p><strong>Nature of our services:</strong> MDS Enterprises provides consulting services in the areas of business strategy, database revitalisation, system design, workflow automation, and operational improvement. We are not data entry operators, auditors, or data verification specialists.</p>
+          <p><strong>Client is solely responsible for:</strong></p>
+          <ul>
+            <li>The accuracy, completeness, and legality of all data, records, customer lists, and information provided to MDS</li>
+            <li>Verifying and validating any data before, during, and after the engagement</li>
+            <li>Ensuring that customer contact details, records, and database entries are correct and up to date</li>
+            <li>Confirming that all data provided to MDS was collected with appropriate consent under applicable laws</li>
+            <li>Reviewing and approving any outputs, reports, or deliverables that rely on client-provided data</li>
+          </ul>
+          <p><strong>MDS does not warrant or represent that:</strong></p>
+          <ul>
+            <li>Any client data received is accurate, complete, current, or fit for any particular purpose</li>
+            <li>Deliverables built using client-provided data will be free from errors caused by underlying data inaccuracies</li>
+            <li>Database reactivation or outreach campaigns will reach valid or current contacts if the underlying data is outdated or incorrect</li>
+          </ul>
+          <p>MDS accepts no liability for any loss, damage, complaint, or legal claim arising from inaccurate, incomplete, outdated, or unlawfully obtained data provided by the client.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 13. Nature of Services & Exclusions -->
+    <article class="disclosure" id="disclosure-13">
+      <button class="disclosure__header" aria-expanded="false" onclick="toggleDisclosure(13)">
+        <span class="disclosure__number">13</span>
+        <div class="disclosure__content">
+          <h2 class="disclosure__title">Nature of Services & Exclusions</h2>
+          <p class="disclosure__summary">MDS provides business consulting, strategy, and design services only. We do not provide legal, financial, accounting, IT security, or regulated professional advice. Any recommendations should be independently verified by qualified professionals where appropriate.</p>
+          <span class="disclosure__expand-label">Read full terms</span>
+        </div>
+        <svg class="disclosure__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="disclosure__body-wrapper">
+        <div class="disclosure__body">
+          <p><strong>MDS Enterprises provides:</strong></p>
+          <ul>
+            <li>Business strategy and operational consulting</li>
+            <li>Database revitalisation and CRM system design</li>
+            <li>Workflow automation and process improvement</li>
+            <li>Sales and marketing strategy and playbook design</li>
+            <li>System implementation and training</li>
+          </ul>
+          <p><strong>MDS Enterprises does NOT provide and expressly excludes:</strong></p>
+          <ul>
+            <li>Legal advice or legal services of any kind</li>
+            <li>Financial, tax, or accounting advice</li>
+            <li>Cybersecurity, IT security, or data protection services</li>
+            <li>Regulated professional advice (e.g. medical, engineering, architectural)</li>
+            <li>Ongoing IT support, hosting, or managed services unless separately agreed in writing</li>
+          </ul>
+          <p>Any general information or recommendations provided by MDS in relation to the above areas are for informational purposes only and do not constitute professional advice. The client is responsible for engaging appropriately qualified professionals for matters outside the scope of MDS services.</p>
+          <p>Nothing in these terms excludes any rights the client may have under the Australian Consumer Law for services that are not provided with due care and skill.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- SIGNATURE SECTION -->
+    <section class="signature-section" id="signatureSection">
+      <h2 class="signature-section__heading">Digital Signature</h2>
+      <p class="signature-section__subheading">Please complete the fields below and provide your signature to accept these terms.</p>
+
+      <div id="formError" class="form-error"></div>
+
+      <form id="agreementForm" action="https://formsubmit.co/c0d3ebccf239700f13cfdca36d05749f" method="POST">
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" id="hiddenSubject" value="MDS Agreement Signed">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" id="hiddenNext" value="">
+        <input type="hidden" name="signature_data" id="hiddenSignature" value="">
+        <input type="hidden" name="project" id="hiddenProject" value="">
+        <input type="hidden" name="agreed_terms" value="All 13 disclosure sections accepted">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="sigName">Client Name</label>
+            <input type="text" id="sigName" name="client_name" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label for="sigCompany">Company</label>
+            <input type="text" id="sigCompany" name="company" placeholder="Company name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="sigEmail">Email</label>
+            <input type="email" id="sigEmail" name="email" placeholder="Email address" required>
+          </div>
+          <div class="form-group">
+            <label for="sigDate">Date</label>
+            <input type="text" id="sigDate" name="date_signed" readonly>
+          </div>
+        </div>
+
+        <div class="signature-canvas-wrapper">
+          <label>Signature</label>
+          <div class="signature-canvas-container" id="canvasContainer">
+            <canvas id="signatureCanvas"></canvas>
+            <span class="signature-canvas-placeholder">Draw your signature here</span>
+          </div>
+          <button type="button" class="signature-clear-btn" onclick="clearSignature()">Clear signature</button>
+          <p class="print-signed-note">Signed digitally</p>
+        </div>
+
+        <label class="checkbox-group">
+          <input type="checkbox" id="agreeCheck" required>
+          <span>I, <strong id="checkboxNameInsert">the undersigned</strong>, confirm that I have read this document in full, agree to the project proposal and payment terms as outlined, and accept all terms and conditions set out above.</span>
+        </label>
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Sign & Accept
+        </button>
+      </form>
+
+      <div class="success-message" id="successMessage">
+        <div class="success-message__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3 class="success-message__title">Agreement signed successfully</h3>
+        <p class="success-message__text">A copy has been sent to MDS Enterprises. Thank you.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      <div class="page-footer__company">Money Doesn't Sleep Enterprises Pty Ltd &nbsp;|&nbsp; ABN 93 614 609 175</div>
+      <div class="page-footer__contact">
+        <a href="mailto:james@mdsenterprises.com.au">james@mdsenterprises.com.au</a> &nbsp;|&nbsp; 0406 718 007
+      </div>
+      <div class="page-footer__locations">SYD · VIC · QLD</div>
+    </footer>
+
+  </div>
+
+  <script>
+    // ========== URL PARAMS ==========
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get('name');
+      const company = params.get('company');
+      const project = params.get('project');
+      const email = params.get('email');
+
+      if (name || company) {
+        const displayParts = [];
+        if (name) displayParts.push(name);
+        if (company) displayParts.push(company);
+        document.getElementById('clientNameDisplay').textContent = displayParts.join(', ');
+      }
+      if (project) {
+        document.getElementById('clientProjectDisplay').textContent = project;
+      }
+      if (name) document.getElementById('sigName').value = name;
+      if (company) document.getElementById('sigCompany').value = company;
+      if (email) document.getElementById('sigEmail').value = email;
+      if (project) document.getElementById('hiddenProject').value = project;
+    })();
+
+    // ========== DATE ==========
+    (function() {
+      const now = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('sigDate').value = now.toLocaleDateString('en-AU', options);
+    })();
+
+    // ========== DISCLOSURE TOGGLE ==========
+    function toggleDisclosure(n) {
+      const el = document.getElementById('disclosure-' + n);
+      const btn = el.querySelector('.disclosure__header');
+      const isOpen = el.classList.contains('is-open');
+      el.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', !isOpen);
+      const label = el.querySelector('.disclosure__expand-label');
+      label.textContent = isOpen ? 'Read full terms' : 'Hide full terms';
+    }
+
+    // ========== SIGNATURE CANVAS ==========
+    const canvas = document.getElementById('signatureCanvas');
+    const ctx = canvas.getContext('2d');
+    const container = document.getElementById('canvasContainer');
+    let isDrawing = false;
+    let hasSigned = false;
+
+    function resizeCanvas() {
+      const rect = canvas.parentElement.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = rect.width * dpr;
+      canvas.height = 150 * dpr;
+      canvas.style.height = '150px';
+      ctx.scale(dpr, dpr);
+      ctx.lineWidth = 2;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.strokeStyle = '#222';
+    }
+    resizeCanvas();
+    window.addEventListener('resize', function() {
+      if (!hasSigned) resizeCanvas();
+    });
+
+    function getPos(e) {
+      const rect = canvas.getBoundingClientRect();
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+      return { x: clientX - rect.left, y: clientY - rect.top };
+    }
+
+    function startDraw(e) {
+      e.preventDefault();
+      isDrawing = true;
+      const pos = getPos(e);
+      ctx.beginPath();
+      ctx.moveTo(pos.x, pos.y);
+    }
+    function draw(e) {
+      if (!isDrawing) return;
+      e.preventDefault();
+      const pos = getPos(e);
+      ctx.lineTo(pos.x, pos.y);
+      ctx.stroke();
+      if (!hasSigned) {
+        hasSigned = true;
+        container.classList.add('has-signature');
+      }
+    }
+    function stopDraw(e) {
+      if (isDrawing) {
+        isDrawing = false;
+        ctx.closePath();
+      }
+    }
+
+    canvas.addEventListener('mousedown', startDraw);
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', stopDraw);
+    canvas.addEventListener('mouseleave', stopDraw);
+    canvas.addEventListener('touchstart', startDraw, { passive: false });
+    canvas.addEventListener('touchmove', draw, { passive: false });
+    canvas.addEventListener('touchend', stopDraw);
+    canvas.addEventListener('touchcancel', stopDraw);
+
+    function clearSignature() {
+      const dpr = window.devicePixelRatio || 1;
+      ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
+      hasSigned = false;
+      container.classList.remove('has-signature');
+    }
+
+    // ========== CHECKBOX NAME SYNC ==========
+    const sigNameInput = document.getElementById('sigName');
+    const checkboxNameInsert = document.getElementById('checkboxNameInsert');
+    sigNameInput.addEventListener('input', function() {
+      checkboxNameInsert.textContent = this.value.trim() || 'the undersigned';
+    });
+    // Init if prefilled
+    if (sigNameInput.value) {
+      checkboxNameInsert.textContent = sigNameInput.value;
+    }
+
+    // ========== FORM SUBMIT ==========
+    const form = document.getElementById('agreementForm');
+    const formError = document.getElementById('formError');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      formError.classList.remove('is-visible');
+
+      // Validate
+      const name = sigNameInput.value.trim();
+      const company = document.getElementById('sigCompany').value.trim();
+      const email = document.getElementById('sigEmail').value.trim();
+      const agreed = document.getElementById('agreeCheck').checked;
+
+      const errors = [];
+      if (!name) errors.push('Please enter your name.');
+      if (!company) errors.push('Please enter your company name.');
+      if (!email) errors.push('Please enter your email address.');
+      if (!hasSigned) errors.push('Please draw your signature.');
+      if (!agreed) errors.push('Please confirm you have read and agree to the terms.');
+
+      if (errors.length) {
+        formError.innerHTML = errors.join('<br>');
+        formError.classList.add('is-visible');
+        formError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      // Prepare data
+      document.getElementById('hiddenSubject').value = 'MDS Agreement Signed — ' + company;
+      document.getElementById('hiddenSignature').value = canvas.toDataURL('image/png');
+
+      // Set _next to current page to avoid redirect issues
+      document.getElementById('hiddenNext').value = window.location.href;
+
+      // Disable button
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="10"><animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/></circle></svg> Submitting…';
+
+      // Submit via fetch
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function(response) {
+        if (response.ok) {
+          showSuccess();
+        } else {
+          // Fallback: try regular form submit
+          form.submit();
+        }
+      })
+      .catch(function() {
+        // Fallback: try regular form submit
+        form.submit();
+      });
+    });
+
+    function showSuccess() {
+      form.style.display = 'none';
+      document.getElementById('successMessage').classList.add('is-visible');
+    }
+  </script>
+
+</body>
+</html>
